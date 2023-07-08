@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background: var(--website-grey-7, #070707);
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.zark_front {
+  background-image: url(./assets/image/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-bottom: 77px; */
+  background-position: center center;
+}
+
+.navbar {
+  margin-bottom: 215px;
+}
+
+.navbar-nav {
+  gap: 30px;
+}
+
+/* header css */
+.nav-link {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.nav-link:hover {
+  color: #FFF;
+}
+
+.signup_btn {
+  padding: 6px 20px 8px 20px;
+  border-radius: 8px;
+  border: 1px solid #14F092;
+}
+
+
+/* banner css */
+/* .banner {
+  margin-bottom: 129px;
+} */
+
+.banner h6 {
+  color: var(--website-green, #14F092);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: uppercase;
+  margin-bottom: 24.5px;
+}
+
+.banner h1 {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.banner p {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+/* launch app css */
+.launch_app {
+  padding-top: 129px;
+  padding-bottom: 100px;
+  background-image: url('assets/image/visa-bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left 12.2% center;
+
+}
+
+.launch_app button {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 40px;
+  width: 192px;
+  height: 40px;
+  color: #FFF;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 8px;
+  border: 1px solid #14F092;
+  background: rgba(49, 49, 49, 0.00);
+  margin-bottom: 83px;
+}
+
+.launch_app p {
+  color: #B1B1B1;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 21px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+}
+
+.content {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.paragraph {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.crypto {
+  padding-bottom: 231px;
+  background-image: url('assets/image/crypto-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.crypto .title {
+  color: #14F092;
+}
+
+.pricing {
+  margin-bottom: 133px;
+}
+
+.pricing .title {
+  color: var(--dashboard-light-blue, #59F5FF);
+}
+
+.business {
+  padding-bottom: 306px;
+  background-image: url('assets/image/business-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.business .title {
+  color: #D255D1;
+}
+
+.socialmedia {
+  margin-bottom: 326px;
+}
+
+.socialmedia .title {
+  color: #FFC459;
+}
+
+.socialmedia .signUp {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #FFC157;
+  background: rgba(49, 49, 49, 0.51);
+  max-width: 362px;
+  height: 40px;
+  margin-top: 62px;
+}
+
+.socialmedia .signUp input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.socialmedia .signUp input::placeholder {
+  color: #AFACAC;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.socialmedia .signUp button {
+  white-space: nowrap;
+  border: none;
+  border-radius: 8px;
+  background: #FFC459;
+  padding: 0 40px;
+  color: var(--website-grey-7, #070707);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+/* faq css */
+.faq h1 {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+
+.faq p {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 30px;
+}
+
+.faq .contact_btn {
+  border-radius: 8px;
+  background: #FFC459;
+  border: none;
+  padding: 10px 30px;
+  color: var(--website-grey-7, #070707);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.faq_accordion {
+  border-radius: 20px;
+  background: var(--website-grey-5, #121212);
+  padding: 30px;
+}
+
+.accordion {
+  --bs-accordion-bg: unset !important;
+  --bs-accordion-color: var(--website-grey-1, #CDCDCD) !important;
+  --bs-accordion-border-color: transparent !important;
+}
+
+.accordion-button {
+  color: var(--website-white, #FFF);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: unset !important;
+  color: var(--website-white, #FFF);
+}
+
+
+.accordion-button::before {
+  background-image: url(./assets/icon/plus.png) !important;
+}
+
+.accordion-button::before {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-right: 20px !important;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button::after {
+  background-image: unset !important;
+  display: none;
+}
+
+.accordion-button::before {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-right: auto;
+  content: "";
+  background-image: var(--bs-accordion-btn-icon);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.accordion-button::before {
+  background-image: url('./assets/icon/plus.png') !important;
+}
+
+.accordion-button:not(.collapsed)::before {
+  background-image: url('./assets/icon/Minus.png') !important;
+}
+
+.accordion-button:focus {
+  border: none;
+  box-shadow: none;
+}
+
+footer {
+  padding-bottom: 50px;
+}
+
+footer img {
+  margin-bottom: 22px;
+}
+
+footer h6 {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 71px;
+}
+
+footer p,
+footer a {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  text-decoration: none;
+}
