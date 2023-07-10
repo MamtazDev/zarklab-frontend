@@ -17,6 +17,10 @@ header {
     line-height: normal;
 }
 
+.free_pro {
+    margin-bottom: 64px;
+}
+
 .free_pro .free {
     position: relative;
     margin-bottom: 100px;
@@ -69,4 +73,21 @@ header {
 
 .free_pro .options div {
     margin-bottom: 27px;
+}
+
+.orange_border {
+    position: relative;
+}
+
+.orange_border::before {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 2px;
+    background-image: linear-gradient(to left, black, #423C42, #FFC459);
+}
+
+.faq {
+    padding-top: 111px;
+    padding-bottom: 154px;
 }
