@@ -353,3 +353,12 @@ footer a {
   line-height: 160%;
   text-decoration: none;
 }
+
+@media screen and (max-width:767px) {
+
+
+
+  footer h6 {
+    margin-bottom: 51px !important;
+  }
+}

@@ -91,3 +91,24 @@ header {
     padding-top: 111px;
     padding-bottom: 154px;
 }
+
+
+@media screen and (max-width:767px) {
+    header {
+        margin-bottom: 120px;
+    }
+
+    .pricing {
+        margin-bottom: 52px;
+        padding-bottom: 248px;
+    }
+
+    .prc_banner h1 {
+        font-size: 32px;
+    }
+
+    .free_pro .free img {
+        position: static;
+    }
+
+}
