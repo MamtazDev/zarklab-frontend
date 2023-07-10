@@ -366,6 +366,12 @@ hr {
 }
 
 
+
+.options img{
+    height: 34px;
+}
+
+
 @media only screen and (max-width: 667px) {
 
     .navbar {
@@ -530,7 +536,13 @@ hr {
         text-align: start !important;
     }
 
+    .options h6 {
+        font-size: 14px;
+    }
 
+    .options img{
+        height: 28px;
+    }
 }
 
 /* Payment Fequently Page End */
