@@ -17,6 +17,9 @@ p {
 }
 
 body {
+  /* background-image: url('assets/image/full-bg.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: contain; */
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: var(--website-grey-7, #070707);
 }
@@ -312,17 +315,6 @@ body {
   background-size: var(--bs-accordion-btn-icon-width);
   transition: var(--bs-accordion-btn-icon-transition);
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .accordion-button::before {
   background-image: url('./assets/icon/plus.png') !important;
