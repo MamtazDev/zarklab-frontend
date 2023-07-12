@@ -70,8 +70,7 @@ body {
 
 
 .navbar.expanded {
-  background-color: #000;
-  /* Set navbar background color when expanded */
+  background-color: #000; /* Set navbar background color when expanded */
 }
 
 .navbar-toggler {
@@ -85,14 +84,13 @@ body {
   transition: .4s ease-in-out;
 }
 
-.signup_btn:hover {
+.signup_btn:hover{
   background: #00cf75;
   border: 1px solid #00cf75;
-
+  
 }
 
-.nav-link:focus,
-.nav-link:hover {
+.nav-link:focus, .nav-link:hover {
   color: #ededed;
 }
 
@@ -251,343 +249,6 @@ body {
 
 /* nav bar mobile End */
 
-/* Modal Start */
-
-.modal-content {
-  border-radius: 8px;
-  border: 1px solid #444;
-  background: #181818;
-}
-
-.signIn_modal {
-  padding: 20px 23px;
-}
-
-.signIn_modal h2 {
-  color: #FFF;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 43px;
-}
-
-.signIn_modal input {
-  border: none;
-  border-radius: 0px;
-  border-bottom: 1px solid var(--website-grey-2, #747474);
-  background: none !important;
-  padding: 0px !important;
-  color: #fff;
-  caret-color: #14F092;
-}
-
-.signIn_modal input::placeholder {
-  color: var(--website-grey-2, #747474);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.signIn_modal a {
-  color: var(--website-green, #14F092);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  margin-left: 30px;
-  text-decoration: none;
-}
-
-.signIn_modal a:hover {
-  text-decoration: underline;
-}
-
-.signIn_modal button {
-  color: #FFF;
-  font-family: Plus Jakarta Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-  border-radius: 6px;
-  border: 1px solid #14F092;
-  background: #181818;
-  width: 111px;
-  padding: 5px 34px;
-  white-space: nowrap;
-  transition: .4s ease-in-out;
-}
-
-.signIn_modal button:hover {
-  border: 1px solid #14F092;
-  background: #14F092;
-}
-
-.signIn_modal p {
-  color: #CDCDCD;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.signIn_modal p>a {
-  color: #14F092;
-  margin-left: 0px;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-  text-decoration: none;
-}
-
-.signIn_modal p>a:hover {
-  text-decoration: underline;
-}
-
-.sign_in_btn {
-  margin-top: 68px;
-}
-
-.form-control:focus {
-  color: #fff;
-  background-color: var(--bs-body-bg);
-  border-color: none;
-  outline: 0;
-  box-shadow: none;
-}
-
-/*Sign_in Modal End */
-
-
-/*Sign_up Modal Start */
-
-.signup_modal {
-  padding: 10px;
-}
-
-.signup_modal p {
-  color: #fff;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.signup_modal label {
-  color: #14F092;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.signup_modal input {
-  border: none;
-  border-radius: 0px;
-  background: none !important;
-  padding: 0px !important;
-  color: #fff;
-  caret-color: #14F092;
-
-}
-
-.signup_modal input::placeholder {
-  color: var(--website-grey-2, #747474);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-
-.continue_btn {
-  color: #FFF;
-  font-family: Plus Jakarta Sans;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-  padding: 6px 29px;
-  background: #000;
-  transition: .4s ease-in-out;
-  border-radius: 6px;
-  border: 1px solid #B1B1B1;
-  background: #181818;
-}
-
-.continue_btn:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.password label {
-  color: #59F5FF
-}
-
-.password button {
-  border: 1px solid #59F5FF;
-}
-
-.password button:hover {
-  background-color: #59F5FF;
-  color: #000;
-}
-
-.password_strong span {
-  display: block;
-  width: 50px;
-  height: 3px;
-  background-color: #59F5FF;
-  border-radius: 6px;
-}
-
-
-.password h5{
-  color: #FFF;
-  font-family: Plus Jakarta Sans;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.password p{
-  color: #666666;
-  font-family: Plus Jakarta Sans;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.user_name label{
-  color: #D255D1
-}
-
-.user_name input{
-  caret-color: #D255D1;
-}
-
-.user_name button{
-  border: 1px solid #D255D1;
-}
-
-.user_name button:hover {
-  background-color: #D255D1;
-  color: #000;
-}
-
-.enter_code{
-  padding: 20px;
-}
-
-.enter_code input{
-  border-radius: 8px;
-  border: 1px solid #444;
-  background: #181818;
-  width: 63px;
-  height: 87px;
-  caret-color: #FFC459;
-  color: #FFC157;
-  font-size: 46px;
-  text-align: center;
-}
-
-.enter_code h4{
-  color: #FFC459;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.enter_code p{
-  color: #FFF;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.enter_code span{
-  color: #14F092;;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.enter_code h6{
-  color: #8A8A8A;
-  font-family: Plus Jakarta Sans;
-  font-size: 13px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.enter_code h6 a{
-  color: #ED6344;
-  text-decoration: none;
-}
-
-.enter_code h6 a:hover{
-  text-decoration: underline;
-}
-
-.enter_code_after > h4{
-  color:#14F092
-}
-
-.enter_code_after h6{
-  color: #FFF;
-  text-align: center;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-}
-
-.enter_code_after p{
-  width: 146px;
-  height: 3px;
-  color: #D255D1;
-  border-bottom: 3px solid #D255D1;
-}
-
-.enter_code_after span > a{
-  color: #8A8A8A;
-  text-align: center;
-  font-family: Plus Jakarta Sans;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
-  text-decoration: none;
-  transition: .4s ease-in;
-}
-
-.enter_code_after span > a:hover{
-  text-decoration: underline;
-}
-
-.enter_code_after{
-  padding: 20px;
-}
-
-/*Sign_up Modal End */
-
-
-
 /* banner css */
 .banner {
   margin-bottom: 51px;
@@ -678,6 +339,14 @@ body {
   font-weight: 400;
   line-height: 160%;
 }
+
+/* .crypto {
+  padding-bottom: 231px;
+  background-image: url('assets/image/crypto-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+} */
 
 .crypto .title {
   color: #14F092;
@@ -877,6 +546,7 @@ footer a {
 }
 
 
+
 /* timeline Start */
 .timeline_card {
   position: relative;
@@ -1066,73 +736,15 @@ footer a {
     /* background-color: #000; */
   }
 
-  .signup_btn {
-    text-align: center;
-    background: #14F092;
-    transition: .4s ease-in-out;
+  .signup_btn{
+      text-align: center;
+      background: #14F092;
+      transition: .4s ease-in-out;
   }
 
-  .signup_btn:hover {
+  .signup_btn:hover{
     background: #0a9458;
     border: 1px solid #0a9458;
-  }
-
-  .signIn_modal {
-    padding: 0px;
-  }
-
-  .signIn_modal h2, .signIn_modal a, .signIn_modal input::placeholder{
-    font-size: 14px;
-  }
-
-  .sign_in_btn {
-    flex-wrap: wrap;
-  }
-
-  .sign_in_btn button {
-    text-align: start;
-    margin-bottom: 44px;
-  }
-
-  .signup_modal p, .signup_modal label{
-    font-size: 14px;
-  }
-
-
-  .continue_btn {
-    font-size: 10px;
-  }
-
-  .password h5{
-    font-size: 11px;
-    margin-top: 10px;
-  }
-
-  .enter_code h4, .enter_code p, .enter_code h6, .enter_code a{
-    font-size: 14px;
-  }
-
-  .enter_code{
-    padding: 5px;
-  }
-
-  .enter_code input {
-    width: 26px;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background: #181818;
-    flex-shrink: 0;
-  }
-
-  .enter_code_after h6, .enter_code_after span > a{
-    font-size: 14px;
-  }
-
-  .enter_code_after p{
-    width: 124px;
   }
 
   .banner h1 {
