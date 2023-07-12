@@ -1,0 +1,512 @@
+/* Home page Start */
+@media only screen and (max-width: 1300px) {
+    .section-timeline {
+      padding-left: 50px;
+    }
+}
+  
+@media only screen and (max-width: 767px) {
+    .navbar-expand-lg {
+        background-color: black !important;
+    }
+
+    .navbar {
+        margin-bottom: 91px;
+        /* background-color: #000; */
+    }
+
+    .signup_btn {
+        text-align: center;
+        background: #14F092;
+        transition: .4s ease-in-out;
+    }
+
+    .signup_btn:hover {
+        background: #0a9458;
+        border: 1px solid #0a9458;
+    }
+
+    .signIn_modal {
+        padding: 0px;
+    }
+
+    .signIn_modal h2, .signIn_modal a, .signIn_modal input::placeholder{
+        font-size: 14px;
+    }
+
+    .sign_in_btn {
+        flex-wrap: wrap;
+    }
+
+    .sign_in_btn button {
+        text-align: start;
+        margin-bottom: 44px;
+    }
+
+    .signup_modal p, .signup_modal label{
+        font-size: 14px;
+    }
+
+
+    .continue_btn {
+        font-size: 10px;
+    }
+
+    .password h5{
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .enter_code h4, .enter_code p, .enter_code h6, .enter_code a{
+        font-size: 14px;
+    }
+
+    .enter_code{
+        padding: 5px;
+    }
+
+    .enter_code input {
+        width: 26px;
+        height: 40px;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid #444;
+        background: #181818;
+        flex-shrink: 0;
+    }
+
+    .enter_code_after h6, .enter_code_after span > a{
+        font-size: 14px;
+    }
+
+    .enter_code_after p{
+        width: 124px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .banner h6 {
+        margin-bottom: 5px;
+    }
+
+    .launch_app button {
+        font-size: 12px;
+        width: 170px;
+        height: 34px;
+        margin-bottom: 78px;
+    }
+
+    .launch_app button img {
+        height: 34px;
+    }
+
+    .title {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .content {
+        font-size: 24px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .socialmedia {
+        margin-bottom: 118px;
+    }
+
+    .faq h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .faq p {
+        font-size: 16px;
+        margin-bottom: 28px;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+    }
+
+    .accordion-body {
+        font-size: 14px;
+    }
+
+    /* time line */
+    .section-timeline {
+        padding-left: 50px;
+    }
+
+    .timeline_card:nth-child(odd)::before {
+        border-width: 0px 0 0px 2px;
+        border-radius: 0px;
+    }
+
+    .timeline_card:nth-child(even)::before {
+        left: -49.7%;
+        /* top: 3px;
+        bottom: 3px; */
+        border-width: 0px 2px 0px 0;
+        border-radius: 0;
+    }
+
+    .pricing {
+        padding-left: 27px;
+    }
+
+    .business {
+        padding-left: 27px;
+        margin-bottom: 0px;
+    }
+
+    .pricing::before {
+        content: url("../image/price_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -21px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 85%;
+    }
+
+    .business::before {
+        content: url("../image/b_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 85%;
+    }
+
+    .socialmedia {
+        margin-top: 60px;
+    }
+
+    footer h6 {
+        font-size: 14px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 425px) {
+    .pricing::before {
+        content: url("../image/price_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -21px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 71%;
+    }
+
+    .business::before {
+        content: url("../image/b_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 68%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .pricing::before {
+        content: url("../image/price_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -21px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 65%;
+    }
+
+    .business::before {
+        content: url("../image/b_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 63%;
+    }
+}
+
+
+@media only screen and (max-width: 320px) {
+    .timeline_card:nth-child(even)::before {
+        left: -49.4%;
+    }
+
+    .business::before {
+        content: url("../image/b_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -23px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 54%;
+    }
+
+    .pricing::before {
+        content: url("../image/price_1.png");
+        position: absolute;
+        border-radius: 50%;
+        top: -21px;
+        transform: translateX(-95%);
+        background: #070707;
+        right: 57%;
+    }
+}
+/* Home  Page End */
+
+/* Pricing Page Start */
+
+@media screen and (max-width:767px) {
+ 
+
+    .pricing_page header {
+        margin-bottom: 120px;
+    }
+
+    .pricing_page {
+        margin-bottom: 52px;
+        padding-bottom: 248px;
+    }
+
+    .prc_banner h1 {
+        font-size: 32px;
+    }
+
+    .free_pro .free img {
+        position: static;
+    }
+
+    footer h6 {
+        font-size: 14px;
+    }
+
+    footer p,
+    footer a {
+    font-size: 12px;
+    }
+
+}
+/* Pricing Page End */
+
+/* payment Page Start */
+
+
+@media only screen and (max-width: 767px) {
+
+    .navbar {
+        margin-bottom: 43px !important;
+    }
+
+    .navbar-expand-lg {
+        background-color: black !important;
+    }
+
+    .signup_btn{
+        text-align: center;
+        background: #14F092;
+        transition: .4s ease-in-out;
+    }
+  
+    .signup_btn:hover{
+      background: #0a9458;
+      border: 1px solid #0a9458;
+    }
+
+    .turning_pro h2{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .payment {
+        padding-bottom: 77px;
+    }
+
+    .payment h1{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .payment p {
+        font-size: 15px;
+        margin-bottom: 23px;
+    }
+
+    .payment button{
+        margin-bottom: 46px;
+    }
+
+    .off_btn {
+        margin-left: 19px;
+    }
+
+    .amount h6 {
+        font-size: 20px;;
+    }
+
+    .pay_box{
+        padding: 11px 10px;
+    }
+
+    .pay_box h3{
+        font-size: 20px;
+    }
+
+    .amount p {
+        margin-bottom: 0;
+    }
+
+    .pay_box {
+        margin-bottom: 96px;
+    }
+
+    .payment h4 {
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .payment_option label {
+        margin-bottom: 28px;
+        font-size: 15px;
+    }
+
+    .payment_option {
+        margin-bottom: 43px;
+    }
+    
+    .payment h5 {
+        font-size: 15px;
+        margin-bottom: 21px;
+    }
+
+    .payment  img{
+        height: 38px;
+    }
+
+    .payment label img{
+        height: 23px;
+    }
+
+    .apple_pay_modal span {
+        font-size: 12px;
+    }
+    
+    .apple_pay_modal p {
+        font-size: 12px;
+    }
+    .payable {
+        font-size: 15px; 
+        margin-top: 9px;
+    }
+
+    .credit_card label {
+        font-size: 12px;
+    }
+
+    .form_data {
+        margin-bottom: 28px;
+    }
+
+    .credit_card input {
+        padding: 8px;
+    }
+
+    .credit_card .form-select {
+        padding: 8px;
+    }
+
+    .billing_information h3 {
+        font-size: 24px;
+    }
+
+    .profile img {
+        height: 48px;
+        width: 48px;
+    }
+
+    .payment h4 {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .billing_information input::placeholder{
+        font-size: 14px;
+    }
+    
+    .bill_input{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .submit_btn button {
+        margin-top: 0px;
+        padding: 14px 34px;
+        font-size: 16px;
+    }
+
+    .plan_header{
+        flex-direction: column;
+        align-items: start !important;
+    }
+
+    .plan_details h3 {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .turning_pro h5 {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .plan_details h4 {
+        font-size: 32px;
+    }
+
+    .plan_details {
+        padding: 36px 18px;
+    }
+
+    .plan_details p {
+        text-align: start !important;
+    }
+
+    .options h6 {
+        font-size: 14px;
+    }
+
+    .options img{
+        height: 28px;
+    }
+
+    footer h6 {
+        font-size: 14px;
+    }
+
+    footer p,
+    footer a {
+        font-size: 12px;
+    }
+}
+
+/* Payment Fequently Page End */
+
+/* payment Page End */

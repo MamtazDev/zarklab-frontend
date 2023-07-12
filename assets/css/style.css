@@ -29,7 +29,7 @@ body {
 }
 
 .zark_front {
-  background-image: url(./assets/image/banner.png);
+  background-image: url("../image/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   /* padding-bottom: 77px; */
@@ -65,7 +65,7 @@ body {
 
 
 .navbar-toggler-icon {
-  background-image: url('./assets/icon/navicon.png');
+  background-image: url('../image/navicon.png');
 }
 
 
@@ -622,7 +622,7 @@ body {
   padding-top: 14px;
   padding-bottom: 100px;
   /* background-image: url('assets/image/visa-bg.png'); */
-  background-image: url('assets/image/lunch_app.png');
+  background-image: url('../image/lunch_app.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left 12.2% center;
@@ -806,7 +806,7 @@ body {
 
 
 .accordion-button::before {
-  background-image: url(./assets/icon/plus.png) !important;
+  background-image: url("../image/plus.png") !important;
 }
 
 .accordion-button::before {
@@ -839,11 +839,11 @@ body {
 }
 
 .accordion-button::before {
-  background-image: url('./assets/icon/plus.png') !important;
+  background-image: url('../image/plus.png') !important;
 }
 
 .accordion-button:not(.collapsed)::before {
-  background-image: url('./assets/icon/Minus.png') !important;
+  background-image: url('../image/Minus.png') !important;
 }
 
 .accordion-button:focus {
@@ -1005,7 +1005,7 @@ footer a {
 }
 
 .crypto::before {
-  content: url('./assets/icon/crypoto.png');
+  content: url('../image/crypoto.png');
   position: absolute;
   border-radius: 50%;
   top: 0px;
@@ -1014,7 +1014,7 @@ footer a {
 }
 
 .pricing::before {
-  content: url(./assets/icon/price_1.png);
+  content: url("../image/price_1.png");
   position: absolute;
   border-radius: 50%;
   top: -21px;
@@ -1029,7 +1029,7 @@ footer a {
 }
 
 .business::before {
-  content: url(./assets/icon/b_1.png);
+  content: url("../image/b_1.png");
   position: absolute;
   border-radius: 50%;
   top: 13px;
@@ -1039,7 +1039,7 @@ footer a {
 }
 
 .socialmedia::before {
-  content: url('./assets/icon/social_media_1.png');
+  content: url('../image/social_media_1.png');
   position: absolute;
   border-radius: 50%;
   top: -30px;
@@ -1050,277 +1050,479 @@ footer a {
 
 /* timeline End */
 
-@media only screen and (max-width: 1300px) {
-  .section-timeline {
-    padding-left: 50px;
-  }
+/* End Home page */
+
+/* Pricing Page Start */
+
+
+.pricing_page {
+  background-image: url('../image/pricing.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 171px;
 }
 
-@media only screen and (max-width: 767px) {
-  .navbar-expand-lg {
-    background-color: black !important;
-  }
-
-  .navbar {
-    margin-bottom: 91px;
-    /* background-color: #000; */
-  }
-
-  .signup_btn {
-    text-align: center;
-    background: #14F092;
-    transition: .4s ease-in-out;
-  }
-
-  .signup_btn:hover {
-    background: #0a9458;
-    border: 1px solid #0a9458;
-  }
-
-  .signIn_modal {
-    padding: 0px;
-  }
-
-  .signIn_modal h2, .signIn_modal a, .signIn_modal input::placeholder{
-    font-size: 14px;
-  }
-
-  .sign_in_btn {
-    flex-wrap: wrap;
-  }
-
-  .sign_in_btn button {
-    text-align: start;
-    margin-bottom: 44px;
-  }
-
-  .signup_modal p, .signup_modal label{
-    font-size: 14px;
-  }
-
-
-  .continue_btn {
-    font-size: 10px;
-  }
-
-  .password h5{
-    font-size: 11px;
-    margin-top: 10px;
-  }
-
-  .enter_code h4, .enter_code p, .enter_code h6, .enter_code a{
-    font-size: 14px;
-  }
-
-  .enter_code{
-    padding: 5px;
-  }
-
-  .enter_code input {
-    width: 26px;
-    height: 40px;
-    font-size: 20px;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #444;
-    background: #181818;
-    flex-shrink: 0;
-  }
-
-  .enter_code_after h6, .enter_code_after span > a{
-    font-size: 14px;
-  }
-
-  .enter_code_after p{
-    width: 124px;
-  }
-
-  .banner h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
-
-  .banner h6 {
-    margin-bottom: 5px;
-  }
-
-  .launch_app button {
-    font-size: 12px;
-    width: 170px;
-    height: 34px;
-    margin-bottom: 78px;
-  }
-
-  .launch_app button img {
-    height: 34px;
-  }
-
-  .title {
-    font-size: 12px;
-    margin-bottom: 12px;
-  }
-
-  .content {
-    font-size: 24px;
-  }
-
-  .paragraph {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  .socialmedia {
-    margin-bottom: 118px;
-  }
-
-  .faq h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-
-  .faq p {
-    font-size: 16px;
-    margin-bottom: 28px;
-  }
-
-  .accordion-button {
-    font-size: 16px;
-  }
-
-  .accordion-body {
-    font-size: 14px;
-  }
-
-  /* time line */
-  .section-timeline {
-    padding-left: 50px;
-  }
-
-  .timeline_card:nth-child(odd)::before {
-    border-width: 0px 0 0px 2px;
-    border-radius: 0px;
-  }
-
-  .timeline_card:nth-child(even)::before {
-    left: -49.7%;
-    /* top: 3px;
-    bottom: 3px; */
-    border-width: 0px 2px 0px 0;
-    border-radius: 0;
-  }
-
-  .pricing {
-    padding-left: 27px;
-  }
-
-  .business {
-    padding-left: 27px;
-    margin-bottom: 0px;
-  }
-
-  .pricing::before {
-    content: url(./assets/icon/price_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -21px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 85%;
-  }
-
-  .business::before {
-    content: url(./assets/icon/b_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -23px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 85%;
-  }
-
-  .socialmedia {
-    margin-top: 60px;
-  }
-
-  footer h6 {
-    font-size: 14px;
-  }
-
-  footer p,
-  footer a {
-    font-size: 12px;
-  }
+.pricing_page header {
+  margin-bottom: 543px;
 }
 
-@media only screen and (max-width: 425px) {
-  .pricing::before {
-    content: url(./assets/icon/price_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -21px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 71%;
-  }
-
-  .business::before {
-    content: url(./assets/icon/b_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -23px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 68%;
-  }
+.prc_banner h1 {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: normal;
 }
 
-@media only screen and (max-width: 375px) {
-  .pricing::before {
-    content: url(./assets/icon/price_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -21px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 65%;
-  }
-
-  .business::before {
-    content: url(./assets/icon/b_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -23px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 63%;
-  }
+.free_pro {
+  margin-bottom: 64px;
 }
 
-
-
-
-@media only screen and (max-width: 320px) {
-  .timeline_card:nth-child(even)::before {
-    left: -49.4%;
-  }
-
-  .business::before {
-    content: url(./assets/icon/b_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -23px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 54%;
-  }
-
-  .pricing::before {
-    content: url(./assets/icon/price_1.png);
-    position: absolute;
-    border-radius: 50%;
-    top: -21px;
-    transform: translateX(-95%);
-    background: #070707;
-    right: 57%;
-  }
+.free_pro .free {
+  position: relative;
+  margin-bottom: 100px;
 }
+
+.free_pro .pro {
+  margin-bottom: 49px;
+}
+
+.free_pro button {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: normal;
+  background: linear-gradient(#070707, #070707) padding-box,
+      linear-gradient(to right, #FFC459, #ED6344) border-box;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  padding: 18px 37px;
+}
+
+.free_pro .free img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.free_pro h2 {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 29px;
+}
+
+.free_pro p {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.free_pro .options h6 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.free_pro .options div {
+  margin-bottom: 27px;
+}
+
+.orange_border {
+  position: relative;
+}
+
+.orange_border::before {
+  position: absolute;
+  content: '';
+  width: 70%;
+  height: 2px;
+  background-image: linear-gradient(to left, black, #423C42, #FFC459);
+}
+
+/* Pricing Page End */
+
+
+/* Main Payment Page Start */
+.navbar {
+  margin-bottom: 86px !important;
+}
+
+.turning_pro h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 47px;
+}
+
+.plan_details {
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #121212;
+  padding: 31px 35px;
+  margin-bottom: 78px;
+}
+
+.plan_details h3 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.plan_details h4 {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.plan_details p {
+  font-size: 24px;
+  color: var(--website-grey-1, #CDCDCD);
+}
+
+.turning_pro h5 {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.plan_header{
+  margin-bottom: 54px;
+}
+
+/* Main Payment Page End */
+
+/* Payment Fequently Page Start */
+
+.payment h1 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.payment p {
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 26px;
+}
+
+.payment button {
+  border-radius: 4px;
+  background: #111212;
+  padding: 10px 16px;
+  color: #8A8A8A;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+  margin-bottom: 49px;
+}
+
+.off_btn {
+  border-radius: 4px;
+  border: 1px solid #FFC459 !important;
+  margin-left: 30px;
+}
+
+.amount h6 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.amount p {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.pay_box {
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #121212;
+  padding: 25px 35px;
+  margin-top: 24px;
+  margin-bottom: 111px;
+}
+
+.pay_box h3 {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.payment h4 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 18px;
+  color: #fff;
+}
+
+.payment_option{
+  margin-bottom: 83px;
+}
+
+.payment_option label {
+  margin-bottom: 31px;
+  color: #666;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin-left: 20px;
+}
+
+.payment_option input {
+  accent-color: #14f092;
+}
+
+.payment h5 {
+  color: #FFF;
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin-bottom: 62px;
+}
+
+.payment  img{
+  transition: .4s ease-in-out;
+}
+
+.payment img:hover{
+  transform: scale(1.02);
+}
+
+.paypal{
+  margin-bottom: 80px;
+}
+
+/* Modal Start */
+
+.modal-content {
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #181818;
+}
+
+hr {
+  background: #252525;
+  margin-top: 18px;
+  margin-bottom: 20px;
+}
+
+.apple_pay_modal span {
+  color: #8A8A8A;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  text-align: right;
+}
+
+.apple_pay_modal p {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.payable {
+  font-size: 20px; 
+  margin-top: 19px;
+}
+/* Modal End */
+
+
+.credit_card label{
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.credit_card input {
+  padding: 25px 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #121212;
+  color: #fff;
+}
+
+.credit_card .form-control:focus {
+  color: #fff;
+  background: #121212;
+  border-color: #444 ;
+  box-shadow: none !important;
+}
+
+.credit_card .form-select {
+  padding: 25px 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #121212;
+  width: 320px;
+}
+
+.credit_card .form-select:focus {
+  color: #fff;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+.credit_card .form-select {
+/* --bs-form-select-bg-img: url('../assets/image/arrow-down.png') !important; */
+}
+
+.form_data{
+  margin-bottom: 54px;
+}
+
+.form_data p{
+  color: #8A8A8A;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+.billing_information h3{
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.billing_information p{
+  color: var(--website-grey-1, #CDCDCD);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  margin-bottom: 45px;
+}
+
+.billing_information{
+  margin-top: 51px;
+}
+
+.profile img{
+  border-radius: 50%;
+  height: 64px;
+  width: 64px;
+}
+
+.profile h4 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+.profile p{
+  color: #666;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  
+}
+
+.profile{
+  margin-bottom: 51px;
+}
+
+.bill_input {
+  gap: 62px;
+}
+
+.billing_information input{
+  border: none;
+  border-bottom: 1px solid var(--website-grey-2, #747474);
+  background: none !important;
+  margin-bottom: 55px;
+  padding: 0px !important;
+  color: #fff;
+}
+
+.billing_information .form-control {
+  border-radius: 0px !important;
+}
+
+.billing_information input::placeholder{
+  color: var(--website-grey-2, #747474);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding-bottom: 15px;
+}
+
+.submit_btn button{
+  color: #171717;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 18px 52px;
+  border-radius: 100px;
+  background: linear-gradient(68deg, #FFC459 6.11%, #D255D1 97.24%);
+  transition: .4s ease-in-out;
+  margin-top: 43px;
+}
+
+.submit_btn button:hover{
+  transform: scale(1.02);
+  background: linear-gradient(45deg, #f6ba49 6.11%, #ea2bea 97.24%);
+}
+
+.options img{
+  height: 34px;
+}
+
+.options h6 {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.options div {
+  margin-bottom: 27px;
+}
+
+/* End Payment Page */
