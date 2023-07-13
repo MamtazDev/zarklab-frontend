@@ -1,10 +1,10 @@
 /* Home page Start */
 @media only screen and (max-width: 1300px) {
     .section-timeline {
-      padding-left: 50px;
+        padding-left: 50px;
     }
 }
-  
+
 @media only screen and (max-width: 767px) {
     .navbar-expand-lg {
         background-color: black !important;
@@ -30,7 +30,9 @@
         padding: 0px;
     }
 
-    .signIn_modal h2, .signIn_modal a, .signIn_modal input::placeholder{
+    .signIn_modal h2,
+    .signIn_modal a,
+    .signIn_modal input::placeholder {
         font-size: 14px;
     }
 
@@ -43,7 +45,8 @@
         margin-bottom: 44px;
     }
 
-    .signup_modal p, .signup_modal label{
+    .signup_modal p,
+    .signup_modal label {
         font-size: 14px;
     }
 
@@ -52,16 +55,19 @@
         font-size: 10px;
     }
 
-    .password h5{
+    .password h5 {
         font-size: 11px;
         margin-top: 10px;
     }
 
-    .enter_code h4, .enter_code p, .enter_code h6, .enter_code a{
+    .enter_code h4,
+    .enter_code p,
+    .enter_code h6,
+    .enter_code a {
         font-size: 14px;
     }
 
-    .enter_code{
+    .enter_code {
         padding: 5px;
     }
 
@@ -76,11 +82,12 @@
         flex-shrink: 0;
     }
 
-    .enter_code_after h6, .enter_code_after span > a{
+    .enter_code_after h6,
+    .enter_code_after span>a {
         font-size: 14px;
     }
 
-    .enter_code_after p{
+    .enter_code_after p {
         width: 124px;
     }
 
@@ -102,6 +109,14 @@
 
     .launch_app button img {
         height: 34px;
+    }
+
+    .launch_app .brand {
+        gap: 25px;
+    }
+
+    .launch_app .brand img {
+        height: 19px;
     }
 
     .title {
@@ -198,7 +213,7 @@
     footer p,
     footer a {
         font-size: 12px;
-}
+    }
 }
 
 @media only screen and (max-width: 425px) {
@@ -279,12 +294,13 @@
         top: -20px;
     }
 }
+
 /* Home  Page End */
 
 /* Pricing Page Start */
 
 @media screen and (max-width:767px) {
- 
+
 
     .pricing_page {
         padding-top: 120px;
@@ -305,9 +321,9 @@
     .free_pro button {
         font-size: 20px;
         padding: 13px 26px;
-    }
 
 }
+
 /* Pricing Page End */
 
 /* payment Page Start */
@@ -323,18 +339,18 @@
         background-color: black !important;
     }
 
-    .signup_btn{
+    .signup_btn {
         text-align: center;
         background: #14F092;
         transition: .4s ease-in-out;
     }
-  
-    .signup_btn:hover{
-      background: #0a9458;
-      border: 1px solid #0a9458;
+
+    .signup_btn:hover {
+        background: #0a9458;
+        border: 1px solid #0a9458;
     }
 
-    .turning_pro h2{
+    .turning_pro h2 {
         font-size: 32px;
         margin-bottom: 40px;
     }
@@ -343,7 +359,7 @@
         padding-bottom: 77px;
     }
 
-    .payment h1{
+    .payment h1 {
         font-size: 24px;
         margin-bottom: 8px;
     }
@@ -353,7 +369,7 @@
         margin-bottom: 23px;
     }
 
-    .payment button{
+    .payment button {
         margin-bottom: 46px;
     }
 
@@ -362,14 +378,15 @@
     }
 
     .amount h6 {
-        font-size: 20px;;
+        font-size: 20px;
+        ;
     }
 
-    .pay_box{
+    .pay_box {
         padding: 11px 10px;
     }
 
-    .pay_box h3{
+    .pay_box h3 {
         font-size: 20px;
     }
 
@@ -394,29 +411,30 @@
     .payment_option {
         margin-bottom: 43px;
     }
-    
+
     .payment h5 {
         font-size: 15px;
         margin-bottom: 21px;
     }
 
-    .payment  img{
+    .payment img {
         height: 38px;
     }
 
-    .payment label img{
+    .payment label img {
         height: 23px;
     }
 
     .apple_pay_modal span {
         font-size: 12px;
     }
-    
+
     .apple_pay_modal p {
         font-size: 12px;
     }
+
     .payable {
-        font-size: 15px; 
+        font-size: 15px;
         margin-top: 9px;
     }
 
@@ -450,11 +468,11 @@
         margin-bottom: 0px;
     }
 
-    .billing_information input::placeholder{
+    .billing_information input::placeholder {
         font-size: 14px;
     }
-    
-    .bill_input{
+
+    .bill_input {
         flex-direction: column;
         gap: 0px;
     }
@@ -465,7 +483,7 @@
         font-size: 16px;
     }
 
-    .plan_header{
+    .plan_header {
         flex-direction: column;
         align-items: start !important;
     }
@@ -496,7 +514,7 @@
         font-size: 14px !important;
     }
 
-    .options img{
+    .options img {
         height: 28px;
     }
 
