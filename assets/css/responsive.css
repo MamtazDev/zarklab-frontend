@@ -224,14 +224,18 @@
 }
 
 @media only screen and (max-width: 375px) {
+    .timeline_card:nth-child(even)::before {
+        left: -49.5%;
+    }
+
+    .crypto::before {
+        left: 1%;
+        top: -4%;
+    }
+   
     .pricing::before {
-        content: url("../image/price_1.png");
-        position: absolute;
-        border-radius: 50%;
         top: -21px;
-        transform: translateX(-95%);
-        background: #070707;
-        right: 65%;
+        right: 64%;
     }
 
     .business::before {
@@ -243,6 +247,11 @@
         background: #070707;
         right: 63%;
     }
+
+    .socialmedia::before {
+        top: -5%;
+        left: 2%;
+    }
 }
 
 
@@ -251,24 +260,23 @@
         left: -49.4%;
     }
 
+    .crypto::before {
+        top: -20px;
+        left: 2%;
+    }
+
     .business::before {
-        content: url("../image/b_1.png");
-        position: absolute;
-        border-radius: 50%;
-        top: -23px;
-        transform: translateX(-95%);
-        background: #070707;
-        right: 54%;
+        top: -20px;
+        right: 55%;
     }
 
     .pricing::before {
-        content: url("../image/price_1.png");
-        position: absolute;
-        border-radius: 50%;
-        top: -21px;
-        transform: translateX(-95%);
-        background: #070707;
-        right: 57%;
+        top: -20px;
+        right: 55%;
+    }
+
+    .socialmedia::before {
+        top: -20px;
     }
 }
 /* Home  Page End */
@@ -278,30 +286,25 @@
 @media screen and (max-width:767px) {
  
 
-    .pricing_page header {
-        margin-bottom: 120px;
-    }
-
     .pricing_page {
-        margin-bottom: 52px;
-        padding-bottom: 248px;
+        padding-top: 120px;
     }
 
     .prc_banner h1 {
         font-size: 32px;
     }
 
+    .free_pro h2 {
+        font-size: 40px;
+    }
+
     .free_pro .free img {
         position: static;
     }
 
-    footer h6 {
-        font-size: 14px;
-    }
-
-    footer p,
-    footer a {
-    font-size: 12px;
+    .free_pro button {
+        font-size: 20px;
+        padding: 13px 26px;
     }
 
 }
@@ -490,21 +493,13 @@
     }
 
     .options h6 {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .options img{
         height: 28px;
     }
 
-    footer h6 {
-        font-size: 14px;
-    }
-
-    footer p,
-    footer a {
-        font-size: 12px;
-    }
 }
 
 /* Payment Fequently Page End */

@@ -12,42 +12,40 @@
 </head>
 
 <body>
-    <section class="zark_front">
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <!-- <nav class="navbar"> -->
-                <div class="container">
-                    <a class="navbar-brand" href="/index.html"><img src="./assets/image/logo.png" alt=""></a>
-                    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                        aria-expanded="false" aria-label="Toggle navigation" id="navbar_bg">
-                        <span class="toggler-icon top-bar"></span>
-                        <span class="toggler-icon middle-bar"></span>
-                        <span class="toggler-icon bottom-bar"></span>
-                    </button>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <!-- <nav class="navbar"> -->
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="./assets/image/logo.png" alt=""></a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation" id="navbar_bg">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./pricing.html">Pricing</a>
-                            </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="./payment_main.html">payment</a>
-                            </li> -->
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign
-                                    in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link signup_btn" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal_1">Sign Up</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pricing.html">Pricing</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./payment_main.html">payment</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign
+                                in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link signup_btn" href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal_1">Sign Up</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-
+            </div>
+        </nav>
+        
         <!-- Sign In Modal Start -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -78,19 +76,17 @@
             </div>
         </div>
         <!-- Sign In Modal End -->
-
-
-
+    
         <!-- Sign Up Modal Start -->
         <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="signup_modal">
+                        <div class="d-none signup_modal" id ="firstSteeper">
                             <p class="mb-2">Welcome to ZarkLab! </p>
                             <p class="mb-4">Experience the new world of AI in Crypto </p>
-
+    
                             <form action="">
                                 <label class="form-label">Enter your email*</label>
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
@@ -103,8 +99,8 @@
                                 </div>
                             </form>
                         </div>
-
-                        <div class="password signup_modal" id="password_show">
+    
+                        <div class="d-none  password signup_modal" id="secondSteeper">
                             <p class="mb-2">Welcome to ZarkLab! </p>
                             <p class="mb-4">Experience the new world of AI in Crypto </p>
                             <form action="">
@@ -139,8 +135,8 @@
                                 </div>
                             </form>
                         </div>
-
-                        <div class="user_name signup_modal">
+    
+                        <div class="d-none user_name signup_modal" id ="thirdSteeper">
                             <p class="mb-2">Welcome to ZarkLab! </p>
                             <p class="mb-4">Experience the new world of AI in Crypto </p>
                             <form action="">
@@ -154,8 +150,8 @@
                                 </div>
                             </form>
                         </div>
-
-                        <div class="enter_code">
+    
+                        <div class="d-none enter_code" id ="fourthSteeper">
                             <h4 class="mb-2">Verify your account </h4>
                             <p class="mb-5">Almost there! We’ve sent a code to <span>penelope@zarklab.ai</span> </p>
                             <form action="">
@@ -173,13 +169,13 @@
                                     <input type="number" name="" id="">
                                     <input type="number" name="" id="">
                                 </div>
-
+    
                                 <h6>Didn’t receive the code?</h6>
                                 <h6><a href="">Resend the code</a> or <a href="">update your email address</a></h6>
                             </form>
                         </div>
-
-                        <div class="enter_code enter_code_after">
+    
+                        <div class=" enter_code enter_code_after" id ="fiveSteeper">
                             <h4 class="mb-5">You’re Set to Go!</h4>
                             <form action="">
                                 <div class="d-flex align-items-center mb-4">
@@ -202,31 +198,35 @@
                                         <h6>Enter ZarkLab Now</h6>
                                         <p></p>
                                     </div>
-                                    <span><a href="">Upgrade Plan</a></span>
+                                    <span><a href="./payment_main.html">Upgrade Plan</a></span>
                                 </div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Sign Up Modal End -->
+        </div>
+        <!-- Sign Up Modal End -->
+    </header>
 
 
-
-            <section class="banner">
-                <div class="container">
-                    <h6>* EARLY ACCESS</h6>
-                    <h1>
-                        Join the World’s First Friendly <br>
-                        Crypto Insights App
-                    </h1>
-                    <p>Built to simplify the most complex crypto questions. Designed for the <br> Crypto Amateurs, the
-                        Enthusiasts,
-                        and
-                        the Veteran. </p>
-                </div>
-            </section>
+    <!-- Banner Section Start -->
+    <section class="zark_front">
+        <section class="banner">
+            <div class="container">
+                <h6>* EARLY ACCESS</h6>
+                <h1>
+                    Join the World’s First Friendly <br>
+                    Crypto Insights App
+                </h1>
+                <p>Built to simplify the most complex crypto questions. Designed for the <br> Crypto Amateurs, the
+                    Enthusiasts,
+                    and
+                    the Veteran. </p>
+            </div>
+        </section>
     </section>
+    <!-- Banner Section End -->
 
 
     <div class="section-timeline container">
@@ -491,16 +491,21 @@
         crossorigin="anonymous"></script>
 
     <script src="./assets/js/script.js"></script>
-    <script>
-        function password_show() {
-            var x = document.getElementById("password_show");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
+    <!-- <script>
+        var visibilityIndex = 0;
+        const firstSteeperdiv = document.querySelector("#firstSteeper")
+        const secondSteeperdiv = document.querySelector("#secondSteeper")
+        const thirdSteeperdiv = document.querySelector("#thirdSteeper")
+        const fourthSteeperdiv = document.querySelector("#fourthSteeper")
+        const fiveSteeperdiv = document.querySelector("#fiveSteeper")
+
+
+        visibilityIndex === 0 && firstSteeperdiv.classList.remove('d-none')        
+        visibilityIndex === 1 && secondSteeperdiv.classList.remove('d-none')        
+        visibilityIndex === 2 && thirdSteeperdiv.classList.remove('d-none')        
+        visibilityIndex === 3 && fourthSteeperdiv.classList.remove('d-none')        
+        visibilityIndex === 4 && fiveSteeperdiv.classList.remove('d-none')        
+    </script> -->
 </body>
 
 </html>
