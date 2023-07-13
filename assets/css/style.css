@@ -1020,7 +1020,7 @@ footer a {
   top: -21px;
   transform: translateX(-95%);
   background: #070707;
-  right: -124px;
+  right: -11%;
 }
 
 .business {
@@ -1035,7 +1035,7 @@ footer a {
   top: 13px;
   transform: translateX(-95%);
   background: #070707;
-  right: -134px;
+  right: -11%;
 }
 
 .socialmedia::before {
