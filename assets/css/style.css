@@ -1005,7 +1005,7 @@ footer a {
 }
 
 .crypto::before {
-  content: url('../image/c_1.png');
+  content: url('../image/crypoto.png');
   position: absolute;
   border-radius: 50%;
   top: 0px;
