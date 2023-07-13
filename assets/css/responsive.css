@@ -11,6 +11,7 @@
     }
 
     .navbar {
+        top: 0;
         margin-bottom: 91px;
         /* background-color: #000; */
     }
@@ -301,9 +302,14 @@
 
 @media screen and (max-width:767px) {
 
+    .orange_border{
+        display: none;
+    }
+    
 
     .pricing_page {
         padding-top: 120px;
+        height: 500px;
     }
 
     .prc_banner h1 {

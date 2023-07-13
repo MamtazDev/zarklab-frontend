@@ -42,7 +42,7 @@ body {
 .navbar {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 22px;
   margin: 0;
   z-index: 999;
 }
@@ -1069,10 +1069,10 @@ footer a {
 .pricing_page {
   background-image: url('../image/pricing.png');
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: inherit;
-  padding-bottom: 210px;
-  padding-top: 551px;
+  background-position: inherit;
+  background-size: cover;
+  padding-top: 600px;
+  height: 919px;
 }
 
 
@@ -1114,6 +1114,7 @@ footer a {
   border-radius: 100px;
   border: 1px solid transparent;
   padding: 18px 37px;
+  white-space: nowrap;
 }
 
 .free_pro .free img {
