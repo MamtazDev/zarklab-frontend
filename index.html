@@ -63,8 +63,8 @@
                                 <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                     <img src="./assets/image/sign_up.png" alt="">
                                     <input class="form-control" type="password" name="" id="" placeholder="Password">
-                                    <img class="position-absolute end-0 img-fluid mb-2" src="./assets/image/password_eye.png"
-                                        alt="">
+                                    <img class="position-absolute end-0 img-fluid mb-2"
+                                        src="./assets/image/password_eye.png" alt="">
                                 </div>
                                 <a href="">Forgot password?</a>
                                 <div class="d-flex justify-content-between align-items-center sign_in_btn">
@@ -84,7 +84,7 @@
         <!-- Sign Up Modal Start -->
         <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" >
+            <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="signup_modal">
@@ -98,22 +98,26 @@
                                         <img src="./assets/image/sign_up.png" alt="">
                                         <input class="form-control" type="email" name="" id="" placeholder="Email">
                                     </div>
-                                <button class="continue_btn" type="submit" onclick="password_show()">Continue</button>
+                                    <button class="continue_btn" type="submit"
+                                        onclick="password_show()">Continue</button>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="password signup_modal"  id="password_show">
+                        <div class="password signup_modal" id="password_show">
                             <p class="mb-2">Welcome to ZarkLab! </p>
                             <p class="mb-4">Experience the new world of AI in Crypto </p>
                             <form action="">
-                                <div class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
+                                <div
+                                    class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
                                     <div class="w-100">
                                         <label class="form-label">Create a password*</label>
                                         <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                             <img src="./assets/image/password_arrow.png" alt="">
-                                            <input class="form-control" type="password" name="" id="" placeholder="*******">
-                                            <img class="position-absolute end-0 img-fluid mb-2" src="./assets/image/sign_up_pass_eye.png" alt="">
+                                            <input class="form-control" type="password" name="" id=""
+                                                placeholder="*******">
+                                            <img class="position-absolute end-0 img-fluid mb-2"
+                                                src="./assets/image/sign_up_pass_eye.png" alt="">
                                         </div>
                                         <div class="password_strong d-flex gap-1 mb-5">
                                             <span></span>
@@ -122,14 +126,16 @@
                                         </div>
                                         <div class="d-lg-none d-block">
                                             <h5>Password is strong</h5>
-                                            <p> Make sure it’s at least 8 characters including a number and a lowercase letter</p>
+                                            <p> Make sure it’s at least 8 characters including a number and a lowercase
+                                                letter</p>
                                         </div>
                                     </div>
                                     <button class="continue_btn" type="submit">Continue</button>
                                 </div>
                                 <div class="d-none d-lg-block">
                                     <h5>Password is strong</h5>
-                                    <p> Make sure it’s at least 8 characters including a number and a lowercase letter</p>
+                                    <p> Make sure it’s at least 8 characters including a number and a lowercase letter
+                                    </p>
                                 </div>
                             </form>
                         </div>
@@ -144,7 +150,7 @@
                                         <img src="./assets/image/sign_up.png" alt="">
                                         <input class="form-control" type="text" name="">
                                     </div>
-                                <button class="continue_btn" type="submit">Continue</button>
+                                    <button class="continue_btn" type="submit">Continue</button>
                                 </div>
                             </form>
                         </div>
@@ -190,7 +196,8 @@
                                     <input type="number" name="" id="">
                                     <input type="number" name="" id="">
                                 </div>
-                                <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-lg-5 gap-3">
+                                <div
+                                    class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-lg-5 gap-3">
                                     <div>
                                         <h6>Enter ZarkLab Now</h6>
                                         <p></p>
@@ -232,7 +239,13 @@
                             <div>
                                 <button>Launch App <img src="./assets/image/arrow-fill.png" alt=""></button>
                                 <p>Trusted by World leading Organisations</p>
-                                <img src="./assets/image/visa.png" alt="">
+                                <div class="d-flex gap-3 gap-lg-5 flex-wrap">
+
+                                    <img src="./assets/image/visa.png" alt="">
+                                    <img src="./assets/image/aws.png" alt="">
+                                    <img src="./assets/image/mit.png" alt="">
+                                    <img src="./assets/image/kpm.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -480,12 +493,12 @@
     <script src="./assets/js/script.js"></script>
     <script>
         function password_show() {
-          var x = document.getElementById("password_show");
-          if (x.style.display === "none") {
-            x.style.display = "block";
-          } else {
-            x.style.display = "none";
-          }
+            var x = document.getElementById("password_show");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
         }
     </script>
 </body>
