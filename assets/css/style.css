@@ -415,7 +415,7 @@ body {
 .continue_btn {
   color: #FFF;
   font-family: Plus Jakarta Sans;
-  font-size: 12px;
+  font-size: 12px !important;
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
@@ -432,17 +432,27 @@ body {
   color: #000;
 }
 
-.password label {
+.password label{
   color: #59F5FF
 }
 
-.password button {
+.pass_btn{
   border: 1px solid #59F5FF;
+  color: #FFF !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding: 6px 29px;
+  background: #000;
+  transition: .4s ease-in-out;
+  border-radius: 6px;
+  background: #181818;
 }
 
-.password button:hover {
+.pass_btn:hover{
   background-color: #59F5FF;
-  color: #000;
+  color: #000 !important;
 }
 
 .password_strong span {
@@ -480,13 +490,23 @@ body {
   caret-color: #D255D1;
 }
 
-.user_name button {
+.userName_btn{
   border: 1px solid #D255D1;
+  color: #FFF !important;
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+  padding: 6px 29px;
+  background: #000;
+  transition: .4s ease-in-out;
+  border-radius: 6px;
+  background: #181818;
 }
 
-.user_name button:hover {
+.userName_btn:hover {
   background-color: #D255D1;
-  color: #000;
+  color: #000 !important;
 }
 
 .enter_code {

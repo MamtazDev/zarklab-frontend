@@ -94,15 +94,14 @@
                                         <img src="./assets/image/sign_up.png" alt="">
                                         <input class="form-control" type="email" name="" id="" placeholder="Email">
                                     </div>
-                                    <button class="continue_btn" type="submit"
-                                        onclick="password_show()">Continue</button>
+                                    <p class="continue_btn" id="continue">Continue</p>
                                 </div>
                             </form>
                         </div>
 
                         <div class="d-none  password signup_modal" id="secondSteeper">
-                            <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p>
+                            <!-- <p class="mb-2">Welcome to ZarkLab! </p>
+                            <p class="mb-4">Experience the new world of AI in Crypto </p> -->
                             <form action="">
                                 <div
                                     class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
@@ -115,18 +114,18 @@
                                             <img class="position-absolute end-0 img-fluid mb-2"
                                                 src="./assets/image/sign_up_pass_eye.png" alt="">
                                         </div>
-                                        <div class="password_strong d-flex gap-1 mb-5">
+                                        <!-- <div class="password_strong d-flex gap-1 mb-5">
                                             <span></span>
                                             <span></span>
                                             <span></span>
-                                        </div>
+                                        </div> -->
                                         <div class="d-lg-none d-block">
                                             <h5>Password is strong</h5>
                                             <p> Make sure it’s at least 8 characters including a number and a lowercase
                                                 letter</p>
                                         </div>
                                     </div>
-                                    <button class="continue_btn" type="submit">Continue</button>
+                                    <p class="pass_btn" id="continue">Continue</p>
                                 </div>
                                 <div class="d-none d-lg-block">
                                     <h5>Password is strong</h5>
@@ -146,7 +145,7 @@
                                         <img src="./assets/image/sign_up.png" alt="">
                                         <input class="form-control" type="text" name="">
                                     </div>
-                                    <button class="continue_btn" type="submit">Continue</button>
+                                    <p class="userName_btn" id="continue">Continue</p>
                                 </div>
                             </form>
                         </div>
@@ -486,30 +485,12 @@
         </div>
     </footer>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 
     <script src="./assets/js/script.js"></script>
-    <script>
-        var visibilityIndex = 0;
-        const firstSteeperdiv = document.querySelector("#firstSteeper")
-        const secondSteeperdiv = document.querySelector("#secondSteeper")
-        const thirdSteeperdiv = document.querySelector("#thirdSteeper")
-        const fourthSteeperdiv = document.querySelector("#fourthSteeper")
-        const fiveSteeperdiv = document.querySelector("#fiveSteeper")
 
-
-        visibilityIndex === 0 && firstSteeperdiv.classList.remove('d-none')
-        visibilityIndex === 1 && secondSteeperdiv.classList.remove('d-none')
-        visibilityIndex === 2 && thirdSteeperdiv.classList.remove('d-none')
-        visibilityIndex === 3 && fourthSteeperdiv.classList.remove('d-none')
-        visibilityIndex === 4 && fiveSteeperdiv.classList.remove('d-none')
-
-
-    </script>
 </body>
 
 </html>
