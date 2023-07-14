@@ -1139,7 +1139,7 @@ footer .privacy {
 }
 
 .free_pro .pro {
-  margin-bottom: 49px;
+  /* margin-bottom: 49px; */
 }
 
 .free_pro button {
@@ -1153,7 +1153,14 @@ footer .privacy {
   border: 1px solid transparent;
   padding: 18px 37px;
   white-space: nowrap;
+  text-decoration: none !important;
+  margin-top: 51px;
 }
+
+.free_pro a {
+  text-decoration: none !important;
+}
+
 
 .free_pro .free img {
   position: absolute;
@@ -1166,7 +1173,16 @@ footer .privacy {
   font-size: 40px;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 29px;
+}
+
+.free_pro h1 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: normal;
+  background: linear-gradient(136deg, #FFC459 0%, #14F092 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .free_pro p {
@@ -1569,9 +1585,9 @@ hr {
   background: linear-gradient(45deg, #f6ba49 6.11%, #ea2bea 97.24%);
 }
 
-.options img {
+/* .options img {
   height: 34px;
-}
+} */
 
 .options h6 {
   color: #FFF;

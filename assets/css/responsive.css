@@ -342,16 +342,29 @@
     }
 
     .pricing_page {
-        padding-top: 120px;
-        height: 500px;
+        padding-top: 200px;
+        padding-bottom: 300px;
+    }
+
+    .free_pro {
+        margin-bottom: 0;
+    }
+
+    .free_pro .options div {
+        margin-bottom: 16px;
     }
 
     .prc_banner h1 {
         font-size: 32px;
+        font-weight: 700;
+    }
+
+    .free_pro h1 {
+        font-size: 36px;
     }
 
     .free_pro h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
     .free_pro .free img {
@@ -361,6 +374,8 @@
     .free_pro button {
         font-size: 20px;
         padding: 13px 26px;
+        margin-top: 44px;
+        margin-bottom: 81px;
     }
 
     .socialmedia::before {
