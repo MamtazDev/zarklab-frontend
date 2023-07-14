@@ -375,7 +375,7 @@ body {
   padding: 10px;
 }
 
-.signup_modal p {
+.signup_modal h3 {
   color: #fff;
   font-family: Plus Jakarta Sans;
   font-size: 16px;
@@ -473,7 +473,7 @@ body {
   line-height: 160%;
 }
 
-.password p {
+.password h6 {
   color: #666666;
   font-family: Plus Jakarta Sans;
   font-size: 10px;

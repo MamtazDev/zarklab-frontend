@@ -28,6 +28,21 @@ const fiveSteeperdiv = document.querySelector("#fiveSteeper");
 // sign up Steeper End
 
 
+// Show password Start
+
+const seePassword = document.querySelector("#see_Password");
+
+seePassword.addEventListener("click", () =>  {
+    var x = document.getElementById("passInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+})
+
+// Show password End
+
 // for payment Page
 
 function radioCheck(radio) {

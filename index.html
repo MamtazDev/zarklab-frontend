@@ -83,9 +83,9 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class=" signup_modal" id="firstSteeper">
-                            <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p>
+                        <div class="signup_modal" id="firstSteeper">
+                            <h3 class="mb-2">Welcome to ZarkLab! </h3>
+                            <h3 class="mb-4">Experience the new world of AI in Crypto </h3>
 
                             <form action="">
                                 <label class="form-label">Enter your email*</label>
@@ -99,20 +99,18 @@
                             </form>
                         </div>
 
-                        <div class="d-none  password signup_modal" id="secondSteeper">
-                            <!-- <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p> -->
-                            <form action="">
+                        <div class="d-none password" id="secondSteeper">
+                            <form action="" class="signup_modal">
                                 <div
                                     class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
                                     <div class="w-100">
                                         <label class="form-label">Create a password*</label>
                                         <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                             <img src="./assets/image/password_arrow.png" alt="">
-                                            <input class="form-control" type="password" name="" id=""
-                                                placeholder="*******">
+                                            <input class="form-control" type="password" name=""  id="passInput"
+                                                placeholder="*******" >
                                             <img class="position-absolute end-0 img-fluid mb-2"
-                                                src="./assets/image/sign_up_pass_eye.png" alt="">
+                                                src="./assets/image/sign_up_pass_eye.png" alt="" id="see_Password">
                                         </div>
                                         <!-- <div class="password_strong d-flex gap-1 mb-5">
                                             <span></span>
@@ -121,23 +119,21 @@
                                         </div> -->
                                         <div class="d-lg-none d-block">
                                             <h5>Password is strong</h5>
-                                            <p> Make sure it’s at least 8 characters including a number and a lowercase
-                                                letter</p>
+                                            <h6> Make sure it’s at least 8 characters including a number and a lowercase
+                                                letter</h6>
                                         </div>
                                     </div>
                                     <p class="pass_btn" id="continue">Continue</p>
                                 </div>
                                 <div class="d-none d-lg-block">
                                     <h5>Password is strong</h5>
-                                    <p> Make sure it’s at least 8 characters including a number and a lowercase letter
-                                    </p>
+                                    <h6> Make sure it’s at least 8 characters including a number and a lowercase letter
+                                    </h6>
                                 </div>
                             </form>
                         </div>
 
                         <div class="d-none user_name signup_modal" id="thirdSteeper">
-                            <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p>
                             <form action="">
                                 <label class="form-label"> Enter a username*</label>
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
@@ -490,6 +486,7 @@
         crossorigin="anonymous"></script>
 
     <script src="./assets/js/script.js"></script>
+
 
 </body>
 
