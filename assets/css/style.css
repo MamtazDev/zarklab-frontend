@@ -45,6 +45,7 @@ body {
   padding-top: 28px;
   margin: 0;
   z-index: 999;
+  top: 0;
 }
 
 
@@ -432,11 +433,11 @@ body {
   color: #000;
 }
 
-.password label{
+.password label {
   color: #59F5FF
 }
 
-.pass_btn{
+.pass_btn {
   border: 1px solid #59F5FF;
   color: #FFF !important;
   font-size: 12px !important;
@@ -450,7 +451,7 @@ body {
   background: #181818;
 }
 
-.pass_btn:hover{
+.pass_btn:hover {
   background-color: #59F5FF;
   color: #000 !important;
 }
@@ -490,7 +491,7 @@ body {
   caret-color: #D255D1;
 }
 
-.userName_btn{
+.userName_btn {
   border: 1px solid #D255D1;
   color: #FFF !important;
   font-size: 12px !important;
@@ -1107,8 +1108,9 @@ footer .privacy {
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: cover;
-  padding-top: 600px;
-  height: 919px;
+  padding-top: 621px;
+  padding-bottom: 198px;
+  /* height: 919px; */
 }
 
 
