@@ -2,12 +2,10 @@
 var visibilityIndex = 0;
 
 
-const incrementIndex = document.querySelector("#continue") ;
-
+const incrementIndex = document.querySelector("#continue");
 incrementIndex.addEventListener("click", () => {
 
     visibilityIndex =  visibilityIndex + 1;
-    // const firstSteeperdiv = document.querySelector("#firstSteeper")
     const secondSteeperdiv = document.querySelector("#secondSteeper");
 
     if( visibilityIndex == 1){
@@ -16,12 +14,40 @@ incrementIndex.addEventListener("click", () => {
     }          
 })
 
-visibilityIndex === 2 && thirdSteeperdiv.classList.remove('d-none');       
-visibilityIndex === 3 && fourthSteeperdiv.classList.remove('d-none');      
+
+const incrementIndex_pass = document.querySelector("#continue_pass") ;
+incrementIndex_pass.addEventListener("click", () => {
+    visibilityIndex =  visibilityIndex + 1;
+    
+    const thirdSteeperdiv = document.querySelector("#thirdSteeper");
+
+    if( visibilityIndex == 2){
+        visibilityIndex === 2 && thirdSteeperdiv.classList.remove('d-none');
+        incrementIndex_pass.remove();
+    }          
+})
+
+const incrementIndex_userName = document.querySelector("#continue_userName") ;
+incrementIndex_userName.addEventListener("click", () => {
+
+    // alert("ok");
+    visibilityIndex =  visibilityIndex + 1;
+    
+    const fourthSteeperdiv = document.querySelector("#fourthSteeper");
+
+    if( visibilityIndex == 3){
+        visibilityIndex === 3 && fourthSteeperdiv.classList.remove('d-none'); 
+        incrementIndex_userName.remove();
+    }          
+})
+
+    
+     
 visibilityIndex === 4 && fiveSteeperdiv.classList.remove('d-none') ;   
 
-const thirdSteeperdiv = document.querySelector("#thirdSteeper");
-const fourthSteeperdiv = document.querySelector("#fourthSteeper");
+// const firstSteeperdiv = document.querySelector("#firstSteeper")
+
+
 const fiveSteeperdiv = document.querySelector("#fiveSteeper");
 
 
