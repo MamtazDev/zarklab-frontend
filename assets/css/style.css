@@ -1222,7 +1222,7 @@ footer .privacy {
 /* Main Payment Page Start */
 
 .turning_pro {
-  margin-top: 110px;
+  margin-top: 154px;
 }
 
 .turning_pro h2 {
@@ -1288,7 +1288,7 @@ footer .privacy {
   margin-bottom: 18px;
 }
 
-.payment p {
+.payment h3 {
   color: var(--website-grey-1, #CDCDCD);
   font-size: 20px;
   font-style: normal;
@@ -1298,6 +1298,7 @@ footer .privacy {
 }
 
 .payment button {
+  border: 1px solid #000;
   border-radius: 4px;
   background: #111212;
   padding: 10px 16px;
@@ -1307,14 +1308,20 @@ footer .privacy {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  border: none;
   margin-bottom: 49px;
+  white-space: nowrap;
+  transition: .4s ease-in-out;
 }
 
 .off_btn {
   border-radius: 4px;
   border: 1px solid #FFC459 !important;
   margin-left: 30px;
+}
+
+.payment button:hover{
+  border: 1px solid #FFC459 !important;
+  color: #fff;
 }
 
 .amount h6 {
@@ -1349,6 +1356,7 @@ footer .privacy {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 0px;
 }
 
 .payment h4 {
