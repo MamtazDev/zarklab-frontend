@@ -1,12 +1,15 @@
 // sign up Steeper Start
 var visibilityIndex = 0;
-
+const firstSteeperdiv = document.querySelector("#firstSteeper")
+const secondSteeperdiv = document.querySelector("#secondSteeper");
+const thirdSteeperdiv = document.querySelector("#thirdSteeper");
+const fourthSteeperdiv = document.querySelector("#fourthSteeper");
+const fiveSteeperdiv = document.querySelector("#fiveSteeper");
 
 const incrementIndex = document.querySelector("#continue");
 incrementIndex.addEventListener("click", () => {
 
     visibilityIndex =  visibilityIndex + 1;
-    const secondSteeperdiv = document.querySelector("#secondSteeper");
 
     if( visibilityIndex == 1){
         visibilityIndex === 1 && secondSteeperdiv.classList.remove('d-none'); 
@@ -18,8 +21,6 @@ incrementIndex.addEventListener("click", () => {
 const incrementIndex_pass = document.querySelector("#continue_pass") ;
 incrementIndex_pass.addEventListener("click", () => {
     visibilityIndex =  visibilityIndex + 1;
-    
-    const thirdSteeperdiv = document.querySelector("#thirdSteeper");
 
     if( visibilityIndex == 2){
         visibilityIndex === 2 && thirdSteeperdiv.classList.remove('d-none');
@@ -33,22 +34,34 @@ incrementIndex_userName.addEventListener("click", () => {
     // alert("ok");
     visibilityIndex =  visibilityIndex + 1;
     
-    const fourthSteeperdiv = document.querySelector("#fourthSteeper");
-
     if( visibilityIndex == 3){
         visibilityIndex === 3 && fourthSteeperdiv.classList.remove('d-none'); 
         incrementIndex_userName.remove();
+        firstSteeperdiv .remove()
+        secondSteeperdiv.remove()
+        thirdSteeperdiv.remove();
     }          
 })
 
+const incrementIndex_digit = document.querySelector("#enter_digit") ;
+incrementIndex_digit.addEventListener("click", () => {
+
+    // alert("ok");
+    visibilityIndex =  visibilityIndex + 1;
     
-     
+    if( visibilityIndex == 4){
+        visibilityIndex === 4 && fiveSteeperdiv.classList.remove('d-none') ;   
+        incrementIndex_userName.remove();
+        firstSteeperdiv .remove()
+        secondSteeperdiv.remove()
+        thirdSteeperdiv.remove();
+        fourthSteeperdiv.remove();
+    }          
+})
+
+
+
 visibilityIndex === 4 && fiveSteeperdiv.classList.remove('d-none') ;   
-
-// const firstSteeperdiv = document.querySelector("#firstSteeper")
-
-
-const fiveSteeperdiv = document.querySelector("#fiveSteeper");
 
 
 // sign up Steeper End
@@ -56,16 +69,26 @@ const fiveSteeperdiv = document.querySelector("#fiveSteeper");
 
 // Show password Start
 
-const seePassword = document.querySelector("#see_Password");
-
+const seePassword = document.querySelector("#signup_Password");
 seePassword.addEventListener("click", () =>  {
-    var x = document.getElementById("passInput");
+    var x = document.getElementById("passInput_signup");
     if (x.type === "password") {
         x.type = "text";
     } else {
         x.type = "password";
     }
 })
+
+const signInPassword = document.querySelector("#signin_Password");
+signInPassword.addEventListener("click", () =>  {
+    var x = document.getElementById("passInput_signin");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+})
+
 
 // Show password End
 

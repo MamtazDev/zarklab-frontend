@@ -14,7 +14,6 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <!-- <nav class="navbar"> -->
             <div class="container">
                 <a class="navbar-brand" href="/index.html"><img src="./assets/image/logo.png" alt=""></a>
                 <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
@@ -60,14 +59,15 @@
                                 </div>
                                 <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                     <img src="./assets/image/sign_up.png" alt="">
-                                    <input class="form-control" type="password" name="" id="" placeholder="Password">
-                                    <img class="position-absolute end-0 img-fluid mb-2"
+                                    <input class="form-control" type="password" name="" id="passInput_signin" placeholder="Password">
+                                    <img class="position-absolute end-0 img-fluid mb-2" id="signin_Password"
                                         src="./assets/image/password_eye.png" alt="">
                                 </div>
                                 <a href="">Forgot password?</a>
                                 <div class="d-flex justify-content-between align-items-center sign_in_btn">
                                     <button type="submit">Sign in</button>
-                                    <p>Not a member yet? <a href="">Create an account</a></p>
+                                    <p>Not a member yet? <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal_1">Create an account</a></p>
                                 </div>
                             </form>
                         </div>
@@ -99,7 +99,7 @@
                             </form>
                         </div>
 
-                        <div class="d-none password" id="secondSteeper">
+                        <div class="d-none password" id="secondSteeper" style="margin-top: 12px;">
                             <form action="" class="signup_modal">
                                 <div
                                     class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
@@ -107,10 +107,10 @@
                                         <label class="form-label">Create a password*</label>
                                         <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                             <img src="./assets/image/password_arrow.png" alt="">
-                                            <input class="form-control" type="password" name=""  id="passInput"
+                                            <input class="form-control" type="password" name=""  id="passInput_signup"
                                                 placeholder="*******" >
                                             <img class="position-absolute end-0 img-fluid mb-2"
-                                                src="./assets/image/sign_up_pass_eye.png" alt="" id="see_Password">
+                                                src="./assets/image/sign_up_pass_eye.png" alt="" id="signup_Password">
                                         </div>
                                         <!-- <div class="password_strong d-flex gap-1 mb-5">
                                             <span></span>
@@ -133,7 +133,7 @@
                             </form>
                         </div>
 
-                        <div class="d-none user_name" id="thirdSteeper">
+                        <div class="d-none user_name" id="thirdSteeper" style="margin-top: 12px;">
                             <form action="" class="signup_modal">
                                 <label class="form-label"> Enter a username*</label>
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
@@ -165,8 +165,15 @@
                                     <input type="number" name="" id="">
                                 </div>
 
-                                <h6>Didn’t receive the code?</h6>
-                                <h6><a href="">Resend the code</a> or <a href="">update your email address</a></h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6>Didn’t receive the code?</h6>
+                                        <h6><a href="">Resend the code</a> or <a href="">update your email address</a></h6>
+                                    </div>
+                                    <p class="userName_btn" id="enter_digit">Continue</p>
+                                </div>
+                                
+                            
                             </form>
                         </div>
 

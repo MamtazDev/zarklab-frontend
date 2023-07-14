@@ -424,7 +424,7 @@ body {
   transition: .4s ease-in-out;
   border-radius: 6px;
   border: 1px solid #B1B1B1;
-  background: #181818;
+  cursor: pointer;
 }
 
 .continue_btn:hover {
@@ -447,7 +447,7 @@ body {
   background: #000;
   transition: .4s ease-in-out;
   border-radius: 6px;
-  background: #181818;
+  cursor: pointer;
 }
 
 .pass_btn:hover{
@@ -501,7 +501,7 @@ body {
   background: #000;
   transition: .4s ease-in-out;
   border-radius: 6px;
-  background: #181818;
+  cursor: pointer;
 }
 
 .userName_btn:hover {
