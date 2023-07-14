@@ -6,6 +6,18 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-item:nth-child(2) {
+        margin-bottom: 208px;
+    }
+
+    .navbar-collapse {
+        margin-top: 45px;
+    }
+
     .navbar-expand-lg {
         background-color: black !important;
     }
@@ -92,20 +104,34 @@
         width: 124px;
     }
 
+    .zark_front {
+        background-position: unset;
+        padding-top: 200px;
+        padding-bottom: 233px;
+    }
+
     .banner h1 {
         font-size: 32px;
         margin-bottom: 20px;
     }
 
     .banner h6 {
-        margin-bottom: 5px;
+        margin-bottom: 10px !important;
+    }
+
+    .crypto::before {
+        top: -24px;
+    }
+
+    .launch_app {
+        padding-bottom: 129px;
     }
 
     .launch_app button {
         font-size: 12px;
         width: 170px;
         height: 34px;
-        margin-bottom: 78px;
+        margin-bottom: 85px;
     }
 
     .launch_app button img {
@@ -158,20 +184,25 @@
 
     /* time line */
     .section-timeline {
-        padding-left: 50px;
+        padding-left: 35px;
     }
 
     .timeline_card:nth-child(odd)::before {
+
         border-width: 0px 0 0px 2px;
         border-radius: 0px;
     }
 
     .timeline_card:nth-child(even)::before {
-        left: -49.7%;
+        left: -49.5%;
         /* top: 3px;
         bottom: 3px; */
         border-width: 0px 2px 0px 0;
         border-radius: 0;
+    }
+
+    .timeline_card:last-child::before {
+        bottom: 76px;
     }
 
     .pricing {
@@ -219,13 +250,8 @@
 
 @media only screen and (max-width: 425px) {
     .pricing::before {
-        content: url("../image/price_1.png");
-        position: absolute;
-        border-radius: 50%;
         top: -21px;
-        transform: translateX(-95%);
-        background: #070707;
-        right: 71%;
+        right: 67%;
     }
 
     .business::before {
@@ -240,15 +266,15 @@
 }
 
 @media only screen and (max-width: 375px) {
-    .timeline_card:nth-child(even)::before {
+    /* .timeline_card:nth-child(even)::before {
         left: -49.5%;
-    }
+    } */
 
     .crypto::before {
         left: 1%;
         top: -4%;
     }
-   
+
     .pricing::before {
         top: -21px;
         right: 64%;
@@ -302,10 +328,10 @@
 
 @media screen and (max-width:767px) {
 
-    .orange_border{
+    .orange_border {
         display: none;
     }
-    
+
 
     .pricing_page {
         padding-top: 120px;
