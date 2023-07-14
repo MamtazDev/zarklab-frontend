@@ -64,7 +64,9 @@
     }
 
 
-    .continue_btn, .userName_btn, .pass_btn{
+    .continue_btn,
+    .userName_btn,
+    .pass_btn {
         font-size: 10px;
     }
 
@@ -146,22 +148,27 @@
         height: 19px;
     }
 
-    .title {
+    /* .title {
         font-size: 12px;
         margin-bottom: 12px;
-    }
+    } */
 
     .content {
         font-size: 24px;
+        margin-bottom: 30px;
     }
 
     .paragraph {
         font-size: 16px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     .socialmedia {
-        margin-bottom: 118px;
+        margin-bottom: 108px;
+    }
+
+    .faq {
+        margin-bottom: 99px;
     }
 
     .faq h1 {
@@ -172,6 +179,10 @@
     .faq p {
         font-size: 16px;
         margin-bottom: 28px;
+    }
+
+    .faq .contact_btn {
+        margin-bottom: 36px;
     }
 
     .accordion-button {
@@ -239,7 +250,7 @@
     }
 
     footer h6 {
-        font-size: 14px;
+        margin-bottom: 51px;
     }
 
     footer p,
@@ -290,10 +301,6 @@
         right: 63%;
     }
 
-    .socialmedia::before {
-        top: -5%;
-        left: 2%;
-    }
 }
 
 
@@ -316,10 +323,6 @@
         top: -20px;
         right: 55%;
     }
-
-    .socialmedia::before {
-        top: -20px;
-    }
 }
 
 /* Home  Page End */
@@ -332,6 +335,11 @@
         display: none;
     }
 
+    .pricing {
+        margin-top: 106px;
+        margin-bottom: 174px;
+
+    }
 
     .pricing_page {
         padding-top: 120px;
@@ -353,6 +361,15 @@
     .free_pro button {
         font-size: 20px;
         padding: 13px 26px;
+    }
+
+    .socialmedia::before {
+        top: -12px;
+    }
+
+    .socialmedia .signUp button {
+        padding: 0 0;
+        width: 76px;
     }
 
 }
