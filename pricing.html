@@ -14,7 +14,6 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg">
-            <!-- <nav class="navbar"> -->
             <div class="container">
                 <a class="navbar-brand" href="/index.html"><img src="./assets/image/logo.png" alt=""></a>
                 <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
@@ -26,17 +25,19 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav align-items-start align-items-lg-center ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./pricing.html">Pricing</a>
+                            <a class="nav-link d-flex align-items-center justify-content-between" aria-current="page"
+                                href="./pricing.html">Pricing <img class="d-block d-md-none"
+                                    src="./assets/image/next-arrow.png" alt=""></a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="./payment_main.html">payment</a>
-                        </li> -->
                         <li class="nav-item">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign
-                                in</a>
+                            <a class="nav-link d-flex align-items-center justify-content-between" aria-current="page"
+                                href="./pricing.html">Sign in <img class="d-block d-md-none"
+                                    src="./assets/image/next-arrow.png" alt=""></a>
                         </li>
+
+
                         <li class="nav-item">
                             <a class="nav-link signup_btn" href="#" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal_1">Sign Up</a>
@@ -60,14 +61,15 @@
                                 </div>
                                 <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                     <img src="./assets/image/sign_up.png" alt="">
-                                    <input class="form-control" type="password" name="" id="" placeholder="Password">
-                                    <img class="position-absolute end-0 img-fluid mb-2"
+                                    <input class="form-control" type="password" name="" id="passInput_signin" placeholder="Password">
+                                    <img class="position-absolute end-0 img-fluid mb-2" id="signin_Password"
                                         src="./assets/image/password_eye.png" alt="">
                                 </div>
                                 <a href="">Forgot password?</a>
                                 <div class="d-flex justify-content-between align-items-center sign_in_btn">
                                     <button type="submit">Sign in</button>
-                                    <p>Not a member yet? <a href="">Create an account</a></p>
+                                    <p>Not a member yet? <a href="" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal_1">Create an account</a></p>
                                 </div>
                             </form>
                         </div>
@@ -83,9 +85,9 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <div class="d-none signup_modal" id="firstSteeper">
-                            <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p>
+                        <div class="signup_modal" id="firstSteeper">
+                            <h3 class="mb-2">Welcome to ZarkLab! </h3>
+                            <h3 class="mb-4">Experience the new world of AI in Crypto </h3>
 
                             <form action="">
                                 <label class="form-label">Enter your email*</label>
@@ -94,59 +96,54 @@
                                         <img src="./assets/image/sign_up.png" alt="">
                                         <input class="form-control" type="email" name="" id="" placeholder="Email">
                                     </div>
-                                    <button class="continue_btn" type="submit"
-                                        onclick="password_show()">Continue</button>
+                                    <p class="continue_btn" id="continue">Continue</p>
                                 </div>
                             </form>
                         </div>
 
-                        <div class="d-none  password signup_modal" id="secondSteeper">
-                            <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p>
-                            <form action="">
+                        <div class="d-none password" id="secondSteeper" style="margin-top: 12px;">
+                            <form action="" class="signup_modal">
                                 <div
                                     class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
                                     <div class="w-100">
                                         <label class="form-label">Create a password*</label>
                                         <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                             <img src="./assets/image/password_arrow.png" alt="">
-                                            <input class="form-control" type="password" name="" id=""
-                                                placeholder="*******">
+                                            <input class="form-control" type="password" name=""  id="passInput_signup"
+                                                placeholder="*******" >
                                             <img class="position-absolute end-0 img-fluid mb-2"
-                                                src="./assets/image/sign_up_pass_eye.png" alt="">
+                                                src="./assets/image/sign_up_pass_eye.png" alt="" id="signup_Password">
                                         </div>
-                                        <div class="password_strong d-flex gap-1 mb-5">
+                                        <!-- <div class="password_strong d-flex gap-1 mb-5">
                                             <span></span>
                                             <span></span>
                                             <span></span>
-                                        </div>
-                                        <div class="d-lg-none d-block">
+                                        </div> -->
+                                        <!-- <div class="d-lg-none d-block">
                                             <h5>Password is strong</h5>
-                                            <p> Make sure it’s at least 8 characters including a number and a lowercase
-                                                letter</p>
-                                        </div>
+                                            <h6> Make sure it’s at least 8 characters including a number and a lowercase
+                                                letter</h6>
+                                        </div> -->
                                     </div>
-                                    <button class="continue_btn" type="submit">Continue</button>
+                                    <p class="pass_btn" id="continue_pass">Continue</p>
                                 </div>
-                                <div class="d-none d-lg-block">
+                                <!-- <div class="d-none d-lg-block">
                                     <h5>Password is strong</h5>
-                                    <p> Make sure it’s at least 8 characters including a number and a lowercase letter
-                                    </p>
-                                </div>
+                                    <h6> Make sure it’s at least 8 characters including a number and a lowercase letter
+                                    </h6>
+                                </div> -->
                             </form>
                         </div>
 
-                        <div class="d-none user_name signup_modal" id="thirdSteeper">
-                            <p class="mb-2">Welcome to ZarkLab! </p>
-                            <p class="mb-4">Experience the new world of AI in Crypto </p>
-                            <form action="">
+                        <div class="d-none user_name" id="thirdSteeper" style="margin-top: 12px;">
+                            <form action="" class="signup_modal">
                                 <label class="form-label"> Enter a username*</label>
                                 <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
                                     <div class="d-flex align-items-center gap-1">
                                         <img src="./assets/image/sign_up.png" alt="">
                                         <input class="form-control" type="text" name="">
                                     </div>
-                                    <button class="continue_btn" type="submit">Continue</button>
+                                    <p class="userName_btn" id="continue_userName">Continue</p>
                                 </div>
                             </form>
                         </div>
@@ -170,8 +167,15 @@
                                     <input type="number" name="" id="">
                                 </div>
 
-                                <h6>Didn’t receive the code?</h6>
-                                <h6><a href="">Resend the code</a> or <a href="">update your email address</a></h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <h6>Didn’t receive the code?</h6>
+                                        <h6><a href="">Resend the code</a> or <a href="">update your email address</a></h6>
+                                    </div>
+                                    <p class="userName_btn" id="enter_digit">Continue</p>
+                                </div>
+                                
+                            
                             </form>
                         </div>
 
@@ -198,7 +202,7 @@
                                         <h6>Enter ZarkLab Now</h6>
                                         <p></p>
                                     </div>
-                                    <span><a href="./payment_main.html">Upgrade Plan</a></span>
+                                    <span><a href="./payment.html">Upgrade Plan</a></span>
                                 </div>
                             </form>
                         </div>
