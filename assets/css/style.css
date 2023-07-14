@@ -32,14 +32,21 @@ body {
   background-image: url("../image/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
-  /* padding-bottom: 77px; */
   background-position: center center;
   padding-bottom: 227px;
+  padding-top: 223px;
+  position: relative;
 }
 
+
 .navbar {
-  margin-bottom: 215px;
+  position: absolute;
+  width: 100%;
+  top: 22px;
+  margin: 0;
+  z-index: 999;
 }
+ 
 
 .navbar-nav {
   gap: 30px;
@@ -787,6 +794,7 @@ body {
   border-radius: 20px;
   background: var(--website-grey-5, #121212);
   padding: 30px;
+  margin-bottom: 105px;
 }
 
 .accordion {
@@ -1023,7 +1031,7 @@ footer a {
   top: -21px;
   transform: translateX(-95%);
   background: #070707;
-  right: -124px;
+  right: -11%;
 }
 
 .business {
@@ -1038,7 +1046,7 @@ footer a {
   top: 13px;
   transform: translateX(-95%);
   background: #070707;
-  right: -134px;
+  right: -11%;
 }
 
 .socialmedia::before {
@@ -1050,25 +1058,23 @@ footer a {
   background: #070707;
 }
 
-
 /* timeline End */
 
 /* End Home page */
 
+
+
+
 /* Pricing Page Start */
-
-
 .pricing_page {
   background-image: url('../image/pricing.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: inherit;
   background-size: cover;
-  padding-bottom: 171px;
+  padding-top: 600px;
+  height: 919px;
 }
 
-.pricing_page header {
-  margin-bottom: 543px;
-}
 
 .prc_banner h1 {
   color: #FFF;
@@ -1080,6 +1086,14 @@ footer a {
 .free_pro {
   margin-bottom: 64px;
 }
+
+/* .free_pro_inner{
+  background-image: url("../image/price_linear.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  margin-top: -7%;
+} */
 
 .free_pro .free {
   position: relative;
@@ -1100,6 +1114,7 @@ footer a {
   border-radius: 100px;
   border: 1px solid transparent;
   padding: 18px 37px;
+  white-space: nowrap;
 }
 
 .free_pro .free img {
@@ -1151,8 +1166,9 @@ footer a {
 
 
 /* Main Payment Page Start */
-.navbar {
-  margin-bottom: 86px !important;
+
+.turning_pro{
+  margin-top: 110px;
 }
 
 .turning_pro h2 {

@@ -12,37 +12,205 @@
 </head>
 
 <body>
-    <div class="pricing_page">
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <!-- <nav class="navbar"> -->
-                <div class="container">
-                    <a class="navbar-brand" href="/index.html"><img src="./assets/image/logo.png" alt=""></a>
-                    <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
-                        type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-                        aria-expanded="false" aria-label="Toggle navigation" id="navbar_bg">
-                        <span class="toggler-icon top-bar"></span>
-                        <span class="toggler-icon middle-bar"></span>
-                        <span class="toggler-icon bottom-bar"></span>
-                    </button>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <!-- <nav class="navbar"> -->
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><img src="./assets/image/logo.png" alt=""></a>
+                <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+                    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation" id="navbar_bg">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon middle-bar"></span>
+                    <span class="toggler-icon bottom-bar"></span>
+                </button>
 
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">Pricing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sign in</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link signup_btn" href="#">Sign Up</a>
-                            </li>
-                        </ul>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pricing.html">Pricing</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./payment_main.html">payment</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign
+                                in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link signup_btn" href="#" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal_1">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sign In Modal Start -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="signIn_modal">
+                            <h2>Welcome Back!</h2>
+                            <form action="">
+                                <div class="d-flex align-items-center gap-1 mb-5">
+                                    <img src="./assets/image/sign_up.png" alt="">
+                                    <input class="form-control" type="email" name="" id="" placeholder="Email">
+                                </div>
+                                <div class="d-flex align-items-center gap-1 mb-3 position-relative">
+                                    <img src="./assets/image/sign_up.png" alt="">
+                                    <input class="form-control" type="password" name="" id="" placeholder="Password">
+                                    <img class="position-absolute end-0 img-fluid mb-2"
+                                        src="./assets/image/password_eye.png" alt="">
+                                </div>
+                                <a href="">Forgot password?</a>
+                                <div class="d-flex justify-content-between align-items-center sign_in_btn">
+                                    <button type="submit">Sign in</button>
+                                    <p>Not a member yet? <a href="">Create an account</a></p>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </div>
+        <!-- Sign In Modal End -->
 
+        <!-- Sign Up Modal Start -->
+        <div class="modal fade" id="exampleModal_1" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="d-none signup_modal" id="firstSteeper">
+                            <p class="mb-2">Welcome to ZarkLab! </p>
+                            <p class="mb-4">Experience the new world of AI in Crypto </p>
+
+                            <form action="">
+                                <label class="form-label">Enter your email*</label>
+                                <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="./assets/image/sign_up.png" alt="">
+                                        <input class="form-control" type="email" name="" id="" placeholder="Email">
+                                    </div>
+                                    <button class="continue_btn" type="submit"
+                                        onclick="password_show()">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="d-none  password signup_modal" id="secondSteeper">
+                            <p class="mb-2">Welcome to ZarkLab! </p>
+                            <p class="mb-4">Experience the new world of AI in Crypto </p>
+                            <form action="">
+                                <div
+                                    class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
+                                    <div class="w-100">
+                                        <label class="form-label">Create a password*</label>
+                                        <div class="d-flex align-items-center gap-1 mb-3 position-relative">
+                                            <img src="./assets/image/password_arrow.png" alt="">
+                                            <input class="form-control" type="password" name="" id=""
+                                                placeholder="*******">
+                                            <img class="position-absolute end-0 img-fluid mb-2"
+                                                src="./assets/image/sign_up_pass_eye.png" alt="">
+                                        </div>
+                                        <div class="password_strong d-flex gap-1 mb-5">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="d-lg-none d-block">
+                                            <h5>Password is strong</h5>
+                                            <p> Make sure it’s at least 8 characters including a number and a lowercase
+                                                letter</p>
+                                        </div>
+                                    </div>
+                                    <button class="continue_btn" type="submit">Continue</button>
+                                </div>
+                                <div class="d-none d-lg-block">
+                                    <h5>Password is strong</h5>
+                                    <p> Make sure it’s at least 8 characters including a number and a lowercase letter
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="d-none user_name signup_modal" id="thirdSteeper">
+                            <p class="mb-2">Welcome to ZarkLab! </p>
+                            <p class="mb-4">Experience the new world of AI in Crypto </p>
+                            <form action="">
+                                <label class="form-label"> Enter a username*</label>
+                                <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+                                    <div class="d-flex align-items-center gap-1">
+                                        <img src="./assets/image/sign_up.png" alt="">
+                                        <input class="form-control" type="text" name="">
+                                    </div>
+                                    <button class="continue_btn" type="submit">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="d-none enter_code" id="fourthSteeper">
+                            <h4 class="mb-2">Verify your account </h4>
+                            <p class="mb-5">Almost there! We’ve sent a code to <span>penelope@zarklab.ai</span> </p>
+                            <form action="">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="./assets/image/enter_code.png" alt="">
+                                    <h4>Enter Code</h4>
+                                </div>
+                                <div class="d-flex gap-2 mb-5">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                </div>
+
+                                <h6>Didn’t receive the code?</h6>
+                                <h6><a href="">Resend the code</a> or <a href="">update your email address</a></h6>
+                            </form>
+                        </div>
+
+                        <div class="d-none enter_code enter_code_after" id="fiveSteeper">
+                            <h4 class="mb-5">You’re Set to Go!</h4>
+                            <form action="">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="./assets/image/enter_code.png" alt="">
+                                    <h4>Enter Code</h4>
+                                </div>
+                                <div class="d-flex gap-2 mb-5">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                    <input type="number" name="" id="">
+                                </div>
+                                <div
+                                    class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-lg-5 gap-3">
+                                    <div>
+                                        <h6>Enter ZarkLab Now</h6>
+                                        <p></p>
+                                    </div>
+                                    <span><a href="./payment_main.html">Upgrade Plan</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Sign Up Modal End -->
+    </header>
+
+
+    <div class="pricing_page">
         <section class="prc_banner">
             <div class="container">
                 <h1>
@@ -53,7 +221,7 @@
     </div>
     <section class="free_pro">
         <div class="container">
-            <div class="row flex-column-reverse flex-lg-row gx-5">
+            <div class="row flex-column-reverse flex-lg-row g-0 gx-lg-5 free_pro_inner">
                 <div class="col-12 col-lg-6">
                     <div class="free">
                         <div>
@@ -62,6 +230,32 @@
                         </div>
                         <img class="img-fluid" src="./assets/image/free.png" alt="">
                     </div>
+
+
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="pro row g-0">
+                        <div class="col-12 col-lg-6">
+                            <h2>ZarkLab PRO</h2>
+                            <p class="mb-5 mb-lg-0">A complete experience with more comprehensive Crypto insights and
+                                AI-driven
+                                Recommendations</p>
+                        </div>
+                        <div class="col-12 col-lg-6">
+
+                            <img class="img-fluid" src="./assets/image/pro.png" alt="">
+                        </div>
+                    </div>
+
+               
+
+                </div>
+            </div>
+
+            <div class="row flex-column-reverse flex-lg-row g-0 gx-lg-5">
+                <div class="col-12 col-lg-6">
+
 
 
                     <div class="options">
@@ -90,16 +284,50 @@
                 <div class="col-12 col-lg-6">
                     <div class="pro row g-0">
                         <div class="col-12 col-lg-6">
-                            <h2>ZarkLab PRO</h2>
-                            <p class="mb-5 mb-lg-0">A complete experience with more comprehensive Crypto insights and
-                                AI-driven
-                                Recommendations</p>
-                        </div>
-                        <div class="col-12 col-lg-6">
 
-                            <img class="img-fluid" src="./assets/image/pro.png" alt="">
+                            <div class="options">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>300+ Crypto insights & Signals </h6>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>Personalised AI-driven Recommendations </h6>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>Unlimited search queries on Crypto Chat </h6>
+                                </div>
+
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>Portfolio Cost Optimisation Calculator </h6>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>Multiple Wallet Addresses for consolidated view </h6>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>Quarterly Crypto Trend Reports</h6>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="../assets/image/red-point.png" alt="">
+                                    <h6>Early access to new analytics tools and insights</h6>
+                                </div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="./assets/image/red-point.png" alt="">
+                                    <h6>Advanced Filters and Customised Search</h6>
+                                </div>
+
+
+                            </div>
+                            <button class="mb-5 mb-lg-0 d-flex gap-5 align-items-center">Turn Pro Now <img
+                                    src="./assets/image/right-arrow.png" alt=""></button>
+
                         </div>
                     </div>
+<<<<<<< HEAD
                     <div class="options">
                         <div class="d-flex align-items-center gap-3">
                             <img src="./assets/image/red-point.png" alt="">
@@ -139,11 +367,13 @@
                             src="./assets/image/right-arrow.png" alt=""></button>
                 </div>
             </div>
+=======
+>>>>>>> 127804aa7db550d19e1deec318d577344aacff77
     </section>
 
-    <p class="orange_border"></p>
+    <p class="orange_border" ></p>
 
-    <div class="faq">
+    <div class="faq" style="padding-top: 80px;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-lg-6">
@@ -276,14 +506,11 @@
         </div>
     </footer>
 
-
-
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
