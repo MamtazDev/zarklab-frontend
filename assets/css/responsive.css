@@ -58,13 +58,13 @@
         margin-bottom: 44px;
     }
 
-    .signup_modal p,
+    .signup_modal h3,
     .signup_modal label {
         font-size: 14px;
     }
 
 
-    .continue_btn {
+    .continue_btn, .userName_btn, .pass_btn{
         font-size: 10px;
     }
 
