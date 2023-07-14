@@ -45,6 +45,7 @@ body {
   padding-top: 28px;
   margin: 0;
   z-index: 999;
+  top: 0;
 }
 
 
@@ -432,11 +433,11 @@ body {
   color: #000;
 }
 
-.password label{
+.password label {
   color: #59F5FF
 }
 
-.pass_btn{
+.pass_btn {
   border: 1px solid #59F5FF;
   color: #FFF !important;
   font-size: 12px !important;
@@ -450,7 +451,7 @@ body {
   cursor: pointer;
 }
 
-.pass_btn:hover{
+.pass_btn:hover {
   background-color: #59F5FF;
   color: #000 !important;
 }
@@ -490,7 +491,7 @@ body {
   caret-color: #D255D1;
 }
 
-.userName_btn{
+.userName_btn {
   border: 1px solid #D255D1;
   color: #FFF !important;
   font-size: 12px !important;
@@ -907,7 +908,7 @@ footer h6 {
   font-size: 16px;
   font-weight: 400;
   line-height: 160%;
-  margin-bottom: 71px;
+  margin-bottom: 77px;
 }
 
 footer p,
@@ -1107,8 +1108,9 @@ footer .privacy {
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: cover;
-  padding-top: 600px;
-  height: 919px;
+  padding-top: 621px;
+  padding-bottom: 198px;
+  /* height: 919px; */
 }
 
 
@@ -1583,3 +1585,10 @@ hr {
 }
 
 /* End Payment Page */
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
