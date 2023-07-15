@@ -15,7 +15,6 @@ h6,
 p {
   margin: 0;
 }
-
 body {
   /* background-image: url('assets/image/full-bg.png') !important;
   background-repeat: no-repeat !important;
@@ -628,7 +627,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   text-transform: uppercase;
-  margin-bottom: 24.5px;
+  margin-bottom: 8px;
 }
 
 .banner h1 {
@@ -636,7 +635,7 @@ body {
   font-size: 50px;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .banner p {
@@ -694,7 +693,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   text-transform: uppercase;
-  margin-bottom: 17px;
+  margin-bottom: 5px;
 }
 
 .content {
@@ -702,7 +701,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
 }
 
 .paragraph {
@@ -717,7 +716,7 @@ body {
 }
 
 .pricing {
-  margin-bottom: 133px;
+  margin-bottom: 186px;
   position: relative;
   margin-top: 130px;
 }
@@ -794,7 +793,7 @@ body {
   font-size: 40px;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .faq p {
@@ -1061,7 +1060,7 @@ footer .privacy {
   content: url('../image/crypoto.png');
   position: absolute;
   border-radius: 50%;
-  top: 35px;
+  top: 3%;
   transform: translateX(-95%);
   background: #070707;
 }
@@ -1113,8 +1112,8 @@ footer .privacy {
   background-repeat: no-repeat;
   background-position: inherit;
   background-size: cover;
-  padding-top: 621px;
-  padding-bottom: 225px;
+  padding-top: 619px;
+  padding-bottom: 200px;
   /* height: 919px; */
 }
 
@@ -1244,7 +1243,7 @@ footer .privacy {
   border: 1px solid #444;
   background: #121212;
   padding: 31px 35px;
-  margin-bottom: 78px;
+  margin-bottom: 71px;
 }
 
 .plan_details h3 {
@@ -1253,7 +1252,7 @@ footer .privacy {
   font-weight: 500;
   line-height: normal;
   color: #fff;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
 }
 
 .plan_details h4 {
@@ -1290,7 +1289,7 @@ footer .privacy {
   font-weight: 500;
   line-height: normal;
   color: #fff;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 .payment h3 {
@@ -1299,7 +1298,7 @@ footer .privacy {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 }
 
 .payment button {
@@ -1313,7 +1312,7 @@ footer .privacy {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 49px;
+  margin-bottom: 40px;
   white-space: nowrap;
   transition: .4s ease-in-out;
 }
@@ -1350,9 +1349,9 @@ footer .privacy {
   border-radius: 8px;
   border: 1px solid #444;
   background: #121212;
-  padding: 25px 35px;
-  margin-top: 24px;
-  margin-bottom: 111px;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-bottom: 102px;
 }
 
 .pay_box h3 {
@@ -1369,12 +1368,12 @@ footer .privacy {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 18px;
+  margin-bottom: 11px;
   color: #fff;
 }
 
 .payment_option {
-  margin-bottom: 83px;
+  margin-bottom: 53px;
 }
 
 .payment_option label {
@@ -1594,6 +1593,7 @@ hr {
   background: linear-gradient(68deg, #FFC459 6.11%, #D255D1 97.24%);
   transition: .4s ease-in-out;
   margin-top: 43px;
+  margin-bottom: 112px;
 }
 
 .submit_btn button:hover {

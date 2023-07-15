@@ -252,7 +252,10 @@
 
     .pricing {
         padding-left: 27px;
+        margin-top: 97px;
+        margin-bottom: 174px;
     }
+
 
     .business {
         padding-left: 27px;
@@ -376,14 +379,8 @@
         display: none;
     }
 
-    .pricing {
-        margin-top: 106px;
-        margin-bottom: 174px;
-
-    }
-
     .pricing_page {
-        padding-top: 200px;
+        padding-top: 182px;
         padding-bottom: 300px;
     }
 
@@ -570,6 +567,7 @@
         margin-top: 0px;
         padding: 14px 34px;
         font-size: 16px;
+        margin-bottom: 63px;
     }
 
     .plan_header {
