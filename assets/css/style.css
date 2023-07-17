@@ -28,6 +28,10 @@ body {
   max-width: 1240px;
 }
 
+.container_1{
+  padding-left: 17%;
+}
+
 .zark_front {
   background-image: url("../image/banner.png");
   background-repeat: no-repeat;
@@ -628,7 +632,7 @@ body {
   font-weight: 400;
   line-height: 160%;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  margin-bottom: 18px;
 }
 
 .banner h1 {

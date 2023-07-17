@@ -1,4 +1,9 @@
 /* Home page Start */
+@media only screen and (max-width: 1440px) {
+    .container_1 {
+        padding-left: 6.5%;
+    }
+}
 @media only screen and (max-width: 1300px) {
     .section-timeline {
         padding-left: 50px;
@@ -6,6 +11,11 @@
 }
 
 @media only screen and (max-width:1024px) {
+
+    .container_1 {
+        padding-left: 3.5%;
+    }
+
     .timeline_card:nth-child(even)::before {
         right: 3%;
     }
@@ -25,6 +35,15 @@
 }
 
 @media only screen and (max-width:768px) {
+    .container_1{
+        padding-left: 4%;
+    }
+
+
+    .timeline_card:nth-child(odd) {
+        padding: 63px 0 63px 30px;
+    }
+
     .timeline_card:nth-child(even)::before {
         right: 8%;
     }
@@ -258,7 +277,7 @@
 
 
     .business {
-        padding-left: 27px;
+        padding-left: 25px;
         margin-bottom: 0px;
     }
 
