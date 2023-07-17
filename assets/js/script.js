@@ -69,25 +69,47 @@ visibilityIndex === 4 && fiveSteeperdiv.classList.remove('d-none') ;
 
 // Show password Start
 
-const seePassword = document.querySelector("#signup_Password");
-seePassword.addEventListener("click", () =>  {
-    var x = document.getElementById("passInput_signup");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password";
-    }
-})
+// const seePassword = document.querySelector("#signup_Password");
+// seePassword.addEventListener("click", () =>  {
+//     var x = document.getElementById("passInput_signup");
+//     // var eyeIcon = document.getElementById("eyeIcon");
+//     if (x.type === "password") {
+//         x.type = "text";
+//         eyeIcon.src = "assets/image/sign_up_pass_eye.png";
+//     } else {
+//         x.type = "password";
+//         eyeIcon.src = "assets/image/sign_up.png";
+//     }
 
-const signInPassword = document.querySelector("#signin_Password");
-signInPassword.addEventListener("click", () =>  {
-    var x = document.getElementById("passInput_signin");
-    if (x.type === "password") {
-        x.type = "text";
+// })
+
+// const signInPassword = document.querySelector("#signin_Password");
+// signInPassword.addEventListener("click", () =>  {
+//     var x = document.getElementById("passInput_signin");
+//     if (x.type === "password") {
+//         x.type = "text";
+
+//     } else {
+//         x.type = "password";
+//     }
+
+
+   
+// })
+
+
+function togglePasswordVisibility() {
+    var passwordInput = document.getElementById("passwordInput");
+    var eyeIcon = document.getElementById("eyeIcon");
+  
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      eyeIcon.src = "./assets/image/sign_up_pass_eye.png";
     } else {
-        x.type = "password";
+      passwordInput.type = "password";
+      eyeIcon.src = "./assets/image/password_eye.png";
     }
-})
+  }
 
 
 // Show password End

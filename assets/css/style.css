@@ -369,6 +369,7 @@ body {
   border-color: none;
   outline: 0;
   box-shadow: none;
+  border-color:none !important;
 }
 
 /*Sign_in Modal End */
