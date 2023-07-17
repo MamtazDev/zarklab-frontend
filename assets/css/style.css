@@ -766,6 +766,12 @@ body {
   width: 100%;
   background-color: transparent;
   border: none;
+  color: #AFACAC;
+  padding-left: 16px;
+}
+
+.socialmedia .signUp input:focus-visible {
+  outline:none;
 }
 
 .socialmedia .signUp input::placeholder {
@@ -773,7 +779,6 @@ body {
   font-size: 14px;
   font-weight: 600;
   line-height: 150%;
-  padding-left: 16px;
 }
 
 .socialmedia .signUp button {
@@ -1323,9 +1328,13 @@ footer .privacy {
   transition: .4s ease-in-out;
 }
 
-.off_btn {
-  border-radius: 4px;
+
+.active{
   border: 1px solid #FFC459 !important;
+  color: #fff !important;
+}
+
+.off_btn {
   margin-left: 30px;
 }
 
@@ -1382,19 +1391,11 @@ footer .privacy {
   margin-bottom: 53px;
 }
 
-.payment_option label {
-  margin-bottom: 31px;
-  color: #666;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 160%;
-  margin-left: 20px;
-}
 
-.payment_option input {
+
+/* .payment_option input {
   accent-color: #14f092;
-}
+} */
 
 .payment h5 {
   color: #FFF;
@@ -1622,6 +1623,76 @@ hr {
   margin-bottom: 27px;
 }
 
+/* custom radio button start */
+
+.payment_option label {
+  margin-bottom: 21px;
+  color: #666;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  padding-left: 37px;
+  cursor: pointer;
+  position: relative;
+}
+
+
+.payment_option input[type="radio"] {
+  display: none;
+}
+
+.payment_option label::before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 1.5px solid #444;
+  border-radius: 50%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: border-color 400ms ease;
+}
+
+.payment_option label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #444;
+  border: 1.5px solid #444;
+  border-radius: 50%;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%) scale(0.5);
+  transition: transform 400ms ease;
+}
+
+.payment_option input[type="radio"]:checked + label::before {
+  border-color: #14F092;
+  
+
+
+}
+
+.payment_option input[type="radio"]:checked + label::after {
+  background-color: #14F092;
+  border: 1.5px solid #14F092;
+  
+}
+
+.payment_option form input:checked ~ .label-text {
+	color: #fff;
+}
+
+.payment_option form input:checked:first-child ~ .ipayClass img {
+  border: 1px solid #14F092;
+}
+
+/* custom radio button end */
+
 /* End Payment Page */
 
 
@@ -1629,4 +1700,12 @@ input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus-visible{
+  outline: none !important;
 }

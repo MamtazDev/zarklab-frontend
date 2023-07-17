@@ -271,7 +271,7 @@
                     <div class="container">
                         <h1>Payment Frequency</h1>
                         <h3>Decide when you get billed</h3>
-                        <button>Pay monthly</button>
+                        <button class="active">Pay monthly</button>
                         <button class="off_btn">Pay yearly | Get 20% off</button>
             
                         <div class="amount">
@@ -289,13 +289,30 @@
                         <div class="payment_option">
                             <form>
                                 <h3 style="margin-bottom: 18px;">Recurring billing payment</h3>
+
+                                <!-- new radio button start -->
+                                <div>
+                                    <input type="radio" class="radio-custom-label ipayClass" id="ipay" name="fav_language" value="HTML" data-bs-toggle="modal" data-bs-target="#exampleModal_ipay">
+                                    <label for="ipay" class="label-img ipayClass"><img class="ipayClass" src="./assets/image/apple_pay.png" alt=""></label>
+                                </div>
+
+                                <div>
+                                    <input type="radio" id="css" name="fav_language" value="CSS" onclick="javascript:radioCheck(this);" data=1>
+                                    <label for="css" class="label-text">Credit/ Debit Card</label><br>
+                                </div>
+
+                                <div>
+                                    <input type="radio" class="radio-custom-label"  id="javascript" name="fav_language" value="JavaScript" onclick="javascript:radioCheck(this);" data=2>
+                                    <label for="javascript" class="label-text">Paypal</label>
+                                </div>
+                                <!-- new radio button end -->
     
-                                <input type="radio" class="radio-custom-label" id="html" name="fav_language" value="HTML" data-bs-toggle="modal" data-bs-target="#exampleModal_ipay">
+                                <!-- <input type="radio" class="radio-custom-label" id="html" name="fav_language" value="HTML" data-bs-toggle="modal" data-bs-target="#exampleModal_ipay">
                                 <label for="html"><img src="./assets/image/apple_pay.png" alt=""></label><br>
                                 <input type="radio" id="css" name="fav_language" value="CSS" onclick="javascript:radioCheck(this);" data=1>
                                 <label for="css" >Credit/ Debit Card</label><br>
                                 <input type="radio" class="radio-custom-label"  id="javascript" name="fav_language" value="JavaScript" onclick="javascript:radioCheck(this);" data=2>
-                                <label for="javascript">Paypal</label>
+                                <label for="javascript">Paypal</label> -->
             
                                 <!-- Modal Start -->
                                 <div class="modal fade" id="exampleModal_ipay" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -303,7 +320,7 @@
                                         <div class="modal-content">
                                         <div class="modal-body">
                                             <div class="apple_pay_modal">
-                                               
+                                                
                                                 <img class="img-fluid" src="./assets/image/apple_pay_modal.png" alt="">
                                                 <hr>
                                                 <div class="row">
