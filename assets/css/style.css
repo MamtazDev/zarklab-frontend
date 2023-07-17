@@ -1114,14 +1114,18 @@ footer .privacy {
 
 /* Pricing Page Start */
 .pricing_page {
-  background-image: url('../image/pricing.png');
+  background: url('../image/pricing.png');
+  /* background-image: url('../image/pricing.png'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 619px;
   padding-bottom: 200px;
-  /* height: 919px; */
 }
+
+
+
+
 
 
 .prc_banner h1 {
