@@ -61,10 +61,14 @@
                                 </div>
                                 <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                     <img src="./assets/image/sign_up.png" alt="">
-                                    <input class="form-control" type="password" name="" id="passInput_signin"
+                                    <!-- <input class="form-control" type="password" name="" id="passInput_signin"
                                         placeholder="Password">
                                     <img class="position-absolute end-0 img-fluid mb-2" id="signin_Password"
-                                        src="./assets/image/password_eye.png" alt="">
+                                        src="./assets/image/password_eye.png" alt=""> -->
+
+                                    <input class="form-control" type="password" name="" id="passwordInput" placeholder="*******" >
+                                    <img class="position-absolute end-0 img-fluid mb-2"
+                                        src="./assets/image/password_eye.png" alt="" id="eyeIcon" onclick="togglePasswordVisibility()">
                                 </div>
                                 <a href="">Forgot password?</a>
                                 <div class="d-flex justify-content-between align-items-center sign_in_btn">
@@ -104,35 +108,33 @@
 
                         <div class="d-none password" id="secondSteeper" style="margin-top: 12px;">
                             <form action="" class="signup_modal">
-                                <div
-                                    class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
+                                <div class="d-flex justify-content-between align-items-center flex-lg-nowrap flex-wrap w-100 gap-4">
                                     <div class="w-100">
                                         <label class="form-label">Create a password*</label>
                                         <div class="d-flex align-items-center gap-1 mb-3 position-relative">
                                             <img src="./assets/image/password_arrow.png" alt="">
-                                            <input class="form-control" type="password" name="" id="passInput_signup"
-                                                placeholder="*******">
+                                            <input class="form-control" type="password" name="" id="passwordInput_2" placeholder="*******" >
                                             <img class="position-absolute end-0 img-fluid mb-2"
-                                                src="./assets/image/sign_up_pass_eye.png" alt="" id="signup_Password">
+                                                src="./assets/image/password_eye.png" alt="" id="eyeIcon_2" onclick="togglePasswordVisibility()">
                                         </div>
-                                        <!-- <div class="password_strong d-flex gap-1 mb-5">
+                                        <div class="password_strong d-flex gap-1 mb-5">
                                             <span></span>
                                             <span></span>
                                             <span></span>
-                                        </div> -->
-                                        <!-- <div class="d-lg-none d-block">
+                                        </div>
+                                        <div class="d-lg-none d-block">
                                             <h5>Password is strong</h5>
                                             <h6> Make sure it’s at least 8 characters including a number and a lowercase
                                                 letter</h6>
-                                        </div> -->
+                                        </div>
                                     </div>
                                     <p class="pass_btn" id="continue_pass">Continue</p>
                                 </div>
-                                <!-- <div class="d-none d-lg-block">
+                                <div class="d-none d-lg-block">
                                     <h5>Password is strong</h5>
                                     <h6> Make sure it’s at least 8 characters including a number and a lowercase letter
                                     </h6>
-                                </div> -->
+                                </div>
                             </form>
                         </div>
 
@@ -150,7 +152,10 @@
                         </div>
 
                         <div class="d-none enter_code" id="fourthSteeper">
-                            <h4 class="mb-2">Verify your account </h4>
+                            <div class="d-flex align-items-center mb-2">
+                                <img src="./assets/image/enter_code.png" alt="">
+                                <h4>Verify your account </h4>
+                            </div>
                             <p class="mb-5">Almost there! We’ve sent a code to <span>penelope@zarklab.ai</span> </p>
                             <form action="">
                                 <div class="d-flex align-items-center mb-4">
@@ -176,7 +181,6 @@
                                     </div>
                                     <p class="userName_btn" id="enter_digit">Continue</p>
                                 </div>
-
                             </form>
                         </div>
 

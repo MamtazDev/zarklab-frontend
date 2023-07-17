@@ -79,18 +79,18 @@ function togglePasswordVisibility() {
   
     if (passwordInput.type === "password") {
       passwordInput.type = "text";
-      eyeIcon.src = "./assets/image/sign_up_pass_eye.png";
+      eyeIcon.src = "./assets/image/password_eye.png";
     } else {
       passwordInput.type = "password";
-      eyeIcon.src = "./assets/image/password_eye.png";
+      eyeIcon.src = "./assets/image/sign_up_pass_eye.png";
     }
 
     if (passwordInput_2.type === "password") {
         passwordInput_2.type = "text";
-        eyeIcon_2.src = "./assets/image/sign_up_pass_eye.png";
+        eyeIcon_2.src = "./assets/image/password_eye.png";
       } else {
         passwordInput_2.type = "password";
-        eyeIcon_2.src = "./assets/image/password_eye.png";
+        eyeIcon_2.src = "./assets/image/sign_up_pass_eye.png";
       }
   }
 
