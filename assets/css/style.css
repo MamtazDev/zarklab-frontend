@@ -411,6 +411,20 @@ body {
   line-height: normal;
 }
 
+.back_btn{
+  color: #747474;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-style: hidden !important;
+  margin-bottom: 20px;
+}
+
+.enter_code button:active{
+  border-style: hidden !important;
+}
 
 /*Sign_in Modal End */
 

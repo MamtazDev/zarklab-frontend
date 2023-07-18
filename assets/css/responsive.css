@@ -101,6 +101,7 @@
         text-align: center;
     }
 
+    .back_btn,
     .signIn_modal h2,
     .signIn_modal a,
     .signIn_modal input::placeholder {
