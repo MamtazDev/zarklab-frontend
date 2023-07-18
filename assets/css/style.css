@@ -281,7 +281,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 43px;
+  margin-bottom: 51px;
 }
 
 .signIn_modal input {
@@ -318,7 +318,6 @@ body {
 
 .signIn_modal button {
   color: #FFF;
-  font-family: Plus Jakarta Sans;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -326,7 +325,7 @@ body {
   border-radius: 6px;
   border: 1px solid #14F092;
   background: #181818;
-  width: 111px;
+  /* width: 111px; */
   padding: 5px 34px;
   white-space: nowrap;
   transition: .4s ease-in-out;
@@ -337,7 +336,7 @@ body {
   background: #14F092;
 }
 
-.signIn_modal p {
+.signIn_modal p,  .signIn_modal p>a {
   color: #CDCDCD;
   font-size: 15px;
   font-style: normal;
@@ -347,12 +346,8 @@ body {
 
 .signIn_modal p>a {
   color: #14F092;
-  margin-left: 0px;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 160%;
   text-decoration: none;
+  margin-left: 0px;
 }
 
 .signIn_modal p>a:hover {
@@ -360,7 +355,7 @@ body {
 }
 
 .sign_in_btn {
-  margin-top: 68px;
+  margin-top: 63px;
 }
 
 .form-control:focus {
@@ -369,8 +364,51 @@ body {
   border-color: var(--website-grey-2, #747474) !important;
   outline: 0;
   box-shadow: none;
+  outline: none !important;
+}
 
- outline: none !important;
+.signIn_modal hr{
+  height: 0.5px;
+  color: #444;
+  /* margin-top: 68px; */
+  margin-bottom: 8px;
+}
+
+.signIn_modal h3{
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.social_login{
+  margin-bottom: 18px;
+}
+
+.social_login a > img{
+  border-radius: 5px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.social_login a{
+  transition: .4s ease-in;
+}
+
+.social_login a:hover{
+  transform: scale(1.02);
+}
+
+.signIn_modal h6{
+  color: #FFF;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 

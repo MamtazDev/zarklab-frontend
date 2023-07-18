@@ -93,13 +93,22 @@
     }
 
     .signIn_modal {
-        padding: 0px;
+        padding: 25px 20px;
+    }
+
+    .signIn_modal p, .signIn_modal p>a{
+        font-size: 13px;
+        text-align: center;
     }
 
     .signIn_modal h2,
     .signIn_modal a,
     .signIn_modal input::placeholder {
         font-size: 14px;
+    }
+
+    .signIn_modal h6{
+        font-size: 12px;
     }
 
     .sign_in_btn {
@@ -109,6 +118,25 @@
     .sign_in_btn button {
         text-align: start;
         margin-bottom: 44px;
+    }
+
+    .signIn_modal hr {
+        margin-top: 8px;
+    }
+
+    .signIn_modal h3 {
+        margin-bottom: 20px;
+    }
+
+    .social_login{
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 0px;
+    }
+    
+    .social_login img{
+        height: 23px;
+        width: 95px;
     }
 
     .signup_modal h3,
